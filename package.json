@@ -8,8 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "axois": "0.0.1-security",
     "next": "9.5.5",
     "react": "17.0.0",
-    "react-dom": "17.0.0"
+    "react-dom": "17.0.0",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   }
 }

@@ -1,0 +1,13 @@
+@media (max-width:900px) {
+  
+
+.nav-list {
+  display:none;
+ }
+
+.banner-text {
+  width : 250px;
+  height : 115px;
+}
+
+}
