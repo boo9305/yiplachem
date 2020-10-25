@@ -1,6 +1,6 @@
 a {
   text-decoration : none;
-  color : black;
+  color : #555;
 }
 
 ul, li {
@@ -58,6 +58,7 @@ ul, li {
   float : left;
   text-align : center;
   line-height:60px;
+  font-weight : 600;
 }
 .nav-logo {
   float : left;
@@ -116,15 +117,45 @@ ul, li {
   position : relative;
   height : 460px;
   width : 100%;
-  background : url(../public/imgs/main_visual.jpg)
+  background : url(../public/imgs/main_visual.jpg) no-repeat 50% 50%;
+  background-size : cover;
 }
 
-.banner-text {
-  margin-top: 100px;
+.banner-txt {
+  position : absolute;
+  top : 100px;
   width : 500px;
   height : 230px;
-  background : url(../public/imgs/main_txt.png);
-  background-size : cover !important;
+  background : url(../public/imgs/main_txt.png) no-repeat 50% 50%;
+  background-size : cover;
+}
+
+.sub-banner {
+  height : 160px;
+  width : 100%;
+  background : url(../public/imgs/sub_main_visual.jpg) no-repeat 50% 50%;
+  background-size : cover;
+}
+.sub-banner-txt {
+  float : right;
+  width : 600px;
+  height : 130px;
+  background : url(../public/imgs/sub_main_txt.png) no-repeat 50% 50%;
+  background-size : cover;
+}
+
+.sub-location {
+  height: 40px;
+  background : #f1f1f1;
+  border-bottom : 1px solid #e3e3e3;
+}
+
+.sub-location-txt {
+  float : right;
+  padding-right : 10px;
+  line-height : 40px;
+  font-size : 12px;
+  font-weight : 500;
 }
 
 .section1 {
@@ -134,7 +165,7 @@ ul, li {
 
 .section1-title {
   padding : 20px 0;
-  text-align : center;
+  color : #444;
 }
 
 .section1-main {
@@ -156,7 +187,7 @@ ul, li {
 .section1-main > div > div > h2 {
   padding-top : 40px;
   font-size:20px;
-  font-weight : 300;
+  font-weight : 600;
   color : #043285;
 }
 
@@ -178,4 +209,36 @@ ul, li {
 
 .section2 {
   height: 480px;
+}
+
+.section2-main > ul > li{
+  float : left;
+  width : 33%;
+}
+
+.section2-main > ul > li > div{
+  position : relative;
+  margin : 10px;
+  height : 300px;
+  background : url(../public/imgs/main_visual.jpg) no-repeat 50% 50%;
+  background-size : cover;
+}
+
+.section2-main > ul > li > div > div{
+  height : 100%;
+  background-color : rgba(0,0,0,0.5)
+}
+
+.footer {
+  background-color : #414143;
+  height : 120px;
+}
+
+.footer-info {
+  padding-top : 50px;
+}
+
+.footer-info > p {
+  color : #aaa;
+  font-size : 12px;
 }

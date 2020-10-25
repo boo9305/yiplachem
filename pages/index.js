@@ -5,15 +5,15 @@ const Home = (props) => {
     <Layout>
       <div className="main">
         <div className="banner">
-          <inner>
-            <div className="banner-text"> </div>
-          </inner>
+          <div className="inner">
+            <div className="banner-txt"> </div>
+          </div>
         </div>
 
         <section className="section1">
           <div className="inner">
             <div className="section1-title">
-              <h2>제품소개</h2>
+              <h2>제품 소개</h2>
             </div>
             <div className="section1-main">
               <div>
@@ -77,12 +77,23 @@ const Home = (props) => {
               <h2>Research-develop</h2>
             </div>
             <div className="section2-main">
-              <div className="con1">
-              </div>
-              <div className="con2">
-              </div>
-
-
+              <ul>
+                <li>
+                  <div>
+                    <div></div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div></div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div></div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </section>

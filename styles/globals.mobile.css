@@ -5,9 +5,22 @@
   display:none;
  }
 
-.banner-text {
+ .banner {
+  height : 300px;
+ }
+
+.banner-txt {
   width : 250px;
   height : 115px;
+  left : 50%;
+  margin-left : -125px;
+}
+
+.section1-main > div > div > h2 {
+  font-size : 15px;
+}
+.section1-main > div > div > p {
+  font-size : 10px;
 }
 
 }

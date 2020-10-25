@@ -31,34 +31,34 @@ const Header = () => {
       <div className="nav">
         <div className="inner">
           <div className="nav-logo">
-            <img src="/imgs/logo.png" alt=""></img>
+            <Link href="/"><a><img src="/imgs/logo.png" alt=""></img></a></Link>
           </div>
           <div className="nav-list"
             onMouseOver={onHandleMouseOver} onMouseOut={onHandleMouseOut}>
             <ul>
               <li>
-                <Link href="/">
-                  <a>회사소개</a>
-                </Link>
+                <a>회사소개</a>
               </li>
               <li>
-                제품소개
+                <a>제품소개</a>
               </li>
               <li>
-                연구개발
+                <a>연구개발</a>
               </li>
               <li>
-                갤러리
+                <a>갤러리</a>
               </li>
               <li>
-                제품문의
+                <a>제품문의</a>
               </li>
             </ul>
             <div ref={navDownWrapRef} className="nav-down-wrap">
               <div className="inner nav-down-wrap-inner">
                 <div>
                   <ul>
-                    <li>CEO 인사말</li>
+                    <li>
+                      <Link href="/ceogreeting"><a>CEO 인사말</a></Link>
+                    </li>
                     <li>연혁</li>
                     <li>비전</li>
                     <li>복리후생</li>
