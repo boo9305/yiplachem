@@ -3,13 +3,21 @@
 }
 
 .ceoTitle {
-  font-size : 30px;
-  color : #043285
+  font-size : 25px;
+  margin-bottom : 50px;
+  border-bottom : 1px solid #dfdfdf;
+  color : #555;
+  text-align : center;
 }
 
 .ceoMaintxt > p {
-  margin-top : 50px;
+  margin-top : 0 50px;
+  padding : 30px;
   color : #666; 
-  font-size : 20px;
+  font-size : 17px;
   font-weight : 500;
+}
+
+.emBlue {
+  color : #043285
 }
