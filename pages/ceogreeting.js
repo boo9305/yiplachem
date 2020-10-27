@@ -4,12 +4,9 @@ import sty from '../styles/ceogreeting.module.css'
 export default (props) => {
   return (
     <SubLayout location="Intro > CEO" navIndex="0" subNavIndex="0">
-      <div className="inner">
-        <div className={sty.ceoMain}>
-          <div className={sty.ceoTitle}>
-            <h2>CEO Intro</h2>
-          </div>
-          <div>
+      <div className="sub-inner">
+        <div>
+          <div className={sty.ceoImg}>
             <img src="./imgs/ceo_tit.jpg" alt="" />
           </div>
           <div className={sty.ceoMaintxt}>

@@ -23,6 +23,13 @@ ul, li {
   max-width : 1080px;
 }
 
+
+.sub-inner {
+  margin : 0 auto;
+  max-width : 880px;
+}
+
+
 .header > .lang {
   height : 30px;
   border-bottom : 1px solid #dfdfdf;
@@ -51,14 +58,15 @@ ul, li {
   float : left;
 }
 
-.nav-list > ul > li{
+.nav-list > ul > li {
   top : 0;
   left : 0;
   width : 145px;
   float : left;
   text-align : center;
   line-height:60px;
-  font-weight : 600;
+  font-weight : 500;
+  color : #333;
 }
 .nav-logo {
   float : left;
@@ -196,6 +204,25 @@ ul, li {
   border-bottom : 3px solid #043285;
 }
 
+.sub-nav-title-txt {
+  padding-top : 50px;
+  text-align: center;
+  padding-bottom : 70px;
+}
+.sub-nav-title-txt > div {
+  padding-bottom : 10px;
+  border-bottom : 1px solid #dfdfdf;
+}
+.sub-nav-title-txt > div > h2 {
+  font-size : 27px;
+  color : #043285;
+}
+
+.sub-nav-title-txt > div > h3 {
+  font-size : 13px;
+  color : #666;
+
+}
 
 .section1 {
   height: 500px;
