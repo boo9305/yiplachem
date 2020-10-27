@@ -3,20 +3,20 @@ import Link from 'next/link'
 import {useRef} from  'react'
 
 function  Header () {
-  const navDownWrapRef = useRef(null);
-  const blindRef = useRef(null);
+  let navDownWrapRef = null
+  let blindRef = null
   const onHandleMouseOver = () => {
-    navDownWrapRef.current.style.height = '400px' 
-    navDownWrapRef.current.style.visibility = 'visible' 
-    blindRef.current.style.backgroundColor = 'rgba(0,0,0,0.5)'
-    blindRef.current.style.height = '100%'
+    navDownWrapRef.style.height = '400px' 
+    navDownWrapRef.style.visibility = 'visible' 
+    blindRef.style.backgroundColor = 'rgba(0,0,0,0.5)'
+    blindRef.style.height = '100%'
   }
 
   const onHandleMouseOut= () => {
-    navDownWrapRef.current.style.height = '0px' 
-    navDownWrapRef.current.style.visibility = 'hidden' 
-    blindRef.current.style.backgroundColor = 'rgba(0,0,0,0)'
-    blindRef.current.style.height = '0'
+    navDownWrapRef.style.height = '0px' 
+    navDownWrapRef.style.visibility = 'hidden' 
+    blindRef.style.backgroundColor = 'rgba(0,0,0,0)'
+    blindRef.style.height = '0'
   }
 
   const arrNav = ["회사소개", "제품소개", "연구개발", "갤러리", "제품문의"]
@@ -36,7 +36,7 @@ function  Header () {
 
   return(
     <div className="header">
-      <div ref={blindRef}  className="blind"></div>
+      <div ref={(ref) => blindRef = ref}  className="blind"></div>
       <div className="lang">
         <div className="inner">
           <ul className="lang-list">
@@ -57,7 +57,7 @@ function  Header () {
                 <li key={index}>{item}</li> 
               )}
             </ul>
-            <div ref={navDownWrapRef} className="nav-down-wrap">
+            <div ref={(ref) => navDownWrapRef = ref} className="nav-down-wrap">
               <div className="inner nav-down-wrap-inner">
                 <div>
                   <ul>
@@ -89,6 +89,7 @@ function  Header () {
           </div>
         </div>
       </div>
+
     </div>
   )
 }

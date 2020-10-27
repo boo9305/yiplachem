@@ -179,9 +179,12 @@ ul, li {
 }
 
 .sub-nav-list-on {
-  color : #043285 !important;
   height : 100%;
   position: relative;
+}
+
+.sub-nav-list-on > a{
+  color : #043285 !important;
 }
 
 .sub-nav-list-on::after {
