@@ -1,4 +1,5 @@
 import React , { useEffect } from 'react'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 
 const About = (props) => {
@@ -8,6 +9,7 @@ const About = (props) => {
   return (
     <Layout>
       <p>This is the about page</p>
+      <Link href="/"><a>home</a></Link>
 
     </Layout>
   )

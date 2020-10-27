@@ -2,19 +2,21 @@ import Link from 'next/link'
 
 import {useRef} from  'react'
 
-const Header = () => {
+function  Header () {
   const navDownWrapRef = useRef(null);
   const blindRef = useRef(null);
   const onHandleMouseOver = () => {
     navDownWrapRef.current.style.height = '400px' 
     navDownWrapRef.current.style.visibility = 'visible' 
     blindRef.current.style.backgroundColor = 'rgba(0,0,0,0.5)'
+    blindRef.current.style.height = '100%'
   }
 
   const onHandleMouseOut= () => {
     navDownWrapRef.current.style.height = '0px' 
     navDownWrapRef.current.style.visibility = 'hidden' 
     blindRef.current.style.backgroundColor = 'rgba(0,0,0,0)'
+    blindRef.current.style.height = '0'
   }
 
   const arrNav = ["회사소개", "제품소개", "연구개발", "갤러리", "제품문의"]
@@ -52,7 +54,7 @@ const Header = () => {
             onMouseOver={onHandleMouseOver} onMouseOut={onHandleMouseOut}>
             <ul>
               {arrNav.map((item, index) => 
-                <li><Link href={arrSubNavURL[index][0]} ><a>{item}</a></Link></li> 
+                <li key={index}>{item}</li> 
               )}
             </ul>
             <div ref={navDownWrapRef} className="nav-down-wrap">
@@ -60,7 +62,7 @@ const Header = () => {
                 <div>
                   <ul>
                     {arrSubNav[0].map((item, index) => 
-                      <li>
+                      <li key={index}>
                         <Link href={arrSubNavURL[0][index]} ><a>{item}</a></Link>
                       </li>
                     )}
@@ -69,15 +71,15 @@ const Header = () => {
 
                 <div>
                   <ul>
-                    {arrSubNav[1].map((item) => 
-                      <li>{item}</li>
+                    {arrSubNav[1].map((item, index) => 
+                      <li key={index}>{item}</li>
                     )}
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    {arrSubNav[2].map((item) => 
-                      <li>{item}</li>
+                    {arrSubNav[2].map((item, index) => 
+                      <li key={index}>{item}</li>
                     )}
                   </ul>
                 </div>

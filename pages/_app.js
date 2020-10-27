@@ -19,6 +19,8 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(reduxThu
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet"/>  
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet"/>  
       <Component {...pageProps} />
     </Provider>
   )

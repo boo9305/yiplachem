@@ -1,7 +1,9 @@
 import React from 'react'
-
-import Layout from './Layout'
 import Link from 'next/link'
+import Layout from './Layout'
+
+import Header from "./Header"
+import Footer from "./Footer"
 
 const SubLayout =  (props) => {
   const arrNav = ["회사소개", "제품소개", "연구개발", "갤러리", "제품문의"]
@@ -40,7 +42,7 @@ const SubLayout =  (props) => {
           <ul>
             {arrSubNav[props.navIndex].map((item, index) =>
               {
-                let cls = ""
+                let cls = "sub-nav-list-off"
                 if (index == props.subNavIndex) { cls = "sub-nav-list-on" } 
                 return (
                   <li className={cls}>
@@ -53,10 +55,6 @@ const SubLayout =  (props) => {
         </div>
       </div>
 
-      <div>
-        <Link href="/"><a>home</a></Link>
-        <a href="/">Homea</a>
-      </div>
       <div>
         {props.children}
       </div>
