@@ -68,10 +68,34 @@ ul, li {
   font-weight : 500;
   color : #333;
 }
+
 .nav-logo {
   float : left;
   margin-top : 15px;
   margin-right : 125px;
+}
+
+.nav-right-btn {
+  float : right;
+  display: none;
+  line-height : 60px;
+  padding-right : 15px;
+}
+
+.nav-right-menu {
+  position : fixed;
+  top : 0px;
+  right : 0;
+  width : 0%;
+  height : 100%;
+  background-color : #fff;
+  z-index : 10;
+  overflow-y : auto;
+  transition : all 0.5s;
+}
+.nav-right-menu > ul > li{
+  padding : 10px;
+  border-bottom : 1px solid #dfdfdf;;
 }
 
 .nav-down-wrap {

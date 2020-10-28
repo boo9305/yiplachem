@@ -7,7 +7,9 @@ export default (props) => {
       <div className="sub-inner">
         <div>
           <div className={sty.ceoImg}>
-            <img src="./imgs/ceo_tit.jpg" alt="" />
+            { /*<img src="./imgs/ceo_tit.jpg" alt="" />*/ }
+            <h1><span className={sty.emBlue}>(주)영인플라켐</span>은 끊임없는 연구개발과 혁신으로 </h1>
+            <h1>고객의 요구 이상의 만족을 위해 오늘도 최선을 다하고 있습니다.</h1>
           </div>
           <div className={sty.ceoMaintxt}>
             <p>

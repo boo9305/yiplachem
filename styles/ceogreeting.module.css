@@ -2,14 +2,22 @@
   padding-top : 100px;
 }
 
-
 .ceoImg {
   text-align: center;
+  padding-bottom : 30px;
+  border-bottom : 2px solid #043285;
 }
+
+.ceoImg > h1 {
+  font-size : 25px;
+  font-weight : 500;
+  color : #555;
+  text-align : left;
+}
+
 .ceoImg > img {
   width : 100%;
   height : 100%;
-  object-fit : cover;
 }
 .ceoTitle {
   font-size : 25px;
@@ -52,6 +60,133 @@
   height : 527px;
   background : url(../public/imgs/vision.png) no-repeat;
   background-size : cover;
+}
+
+.histMain {
+  position : relative;
+  height : 1000px;
+}
+
+.histCenterLine {
+  position : absolute;
+  top : 0;
+  left : 50%;
+  border : 1px solid black;
+  height : 900px;
+}
+
+.histLeft {
+  position : relative;
+  width : 50%;
+  text-align : right;
+}
+
+.histLeftImg{
+  position : absolute;
+  top : 12px;
+  right : -12px;
+  width : 24px;
+  height : 21px;
+  background : url(../public/imgs/hist_button.png) no-repeat;
+}
+
+.histLeftTxt {
+  padding-right :50px;
+}
+
+.histLeftTxt > h2 {
+  color : #303097
+}
+
+.histRight {
+  position : relative;
+  margin-left : 50%;
+}
+
+
+.histRightImg{
+  position : absolute;
+  top : 12px;
+  left : -12px;
+  width : 24px;
+  height : 21px;
+  background : url(../public/imgs/hist_button.png) no-repeat;
+}
+
+.histRightTxt {
+  padding-left :50px;
+}
+
+.histRightTxt > h2 {
+  color : #303097
+}
+
+.benefitList {
+  overflow: hidden;
+}
+
+.benefitList > li{
+  float : left;
+  width : 250px;
+  height : 130px;
+  margin : 10px 20px;
+  border : 1px solid #e0e0e0;
+}
+
+.benefitList > li > div {
+  margin : 40px 10px;
+} 
+
+.benefitList > li > div > h1{
+  font-size : 25px;
+  font-weight : 500;
+  color : #666;
+}
+
+.benefitList > li > div > p{
+  font-size : 15px;
+  font-weight : 500;
+  color : #666;
+
+}
+
+.orgaMain {
+  height : 500px;
+  text-align : center;
+}
+
+.orgaLine1 {
+  position : relative;
+  height : 100px;
+}
+.orgaLine1 > h1{
+  top : 0;
+  left : 50%;
+  margin-left : -125px;
+  width : 250px;
+  font-size : 20px;
+  font-weight : 500;
+  color : #fff;
+  position : absolute;
+  background-color : #005ca9;
+}
+
+.orgaLine2 {
+  position : relative;
+  height : 100px;
+}
+
+.orgaLine2 > h1 {
+  top : 0;
+  left : 85%;
+  margin-left : -125px;
+  width : 250px;
+  font-size : 20px;
+  font-weight : 500;
+  color : #fff;
+  position : absolute;
+  background-color : #005ca9;
+
 }
 
 .emBlue {

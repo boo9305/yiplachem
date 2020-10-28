@@ -14,8 +14,8 @@ const SubLayout =  (props) => {
   ]
   
   const arrSubNavURL = [
-    ["/ceogreeting", "/history", "/vision", "/", "/" , "/"],
-    [""],
+    ["/ceogreeting", "/history", "/vision", "/benefit", "/organization" , "/map"],
+    ["/products"],
     [""],
     [""],
     [""]
