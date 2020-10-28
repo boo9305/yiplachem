@@ -207,6 +207,7 @@ ul, li {
   border-collapse : collapse;
   font-size : 15px;
   overflow: hidden;
+  height : 20px;
   color : #666
 }
 
