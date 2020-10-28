@@ -18,6 +18,12 @@
  .nav-right-menu {
  }
 
+ .sub-nav-list {
+   padding : 5px;
+ }
+ .sub-nav-list > div > ul > li {
+   font-size : 12px;
+ }
 
  .banner {
   height : 300px;

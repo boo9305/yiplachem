@@ -190,23 +190,23 @@ ul, li {
 }
 
 .sub-nav-list {
-  padding : 10px;
+  padding: 10px;
   text-align : center;
   border-bottom : 1px solid #dfdfdf;
-
-}
-
-.sub-nav-list > div > ul{
+  height : 20px;
 }
 
 .sub-nav-list > div > ul > li:first-child {
   border-left : 1px solid #dfdfdf;
 }
+
 .sub-nav-list > div > ul > li {
   display : inline-block;
   width : 15%;
   border-right : 1px solid #dfdfdf;
   border-collapse : collapse;
+  font-size : 15px;
+  overflow: hidden;
   color : #666
 }
 

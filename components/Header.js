@@ -51,7 +51,9 @@ function  Header () {
       <div ref={ref => navRightMenu = ref} className="nav-right-menu">
         <ul>
           {arrNav.map((item, index) => 
-            <li key={index}>{item}</li> 
+            <li>
+              <Link href={arrSubNavURL[index][0]} ><a>{item}</a></Link>
+            </li>
           )}
         </ul>
       </div>

@@ -15,6 +15,7 @@
   text-align : left;
 }
 
+
 .ceoImg > img {
   width : 100%;
   height : 100%;
@@ -26,6 +27,13 @@
   color : #555;
   text-align : center;
 }
+
+
+@media (max-width : 1080px) {
+  .ceoImg > h1 {
+    font-size : 17px;
+  }
+}
 .ceoMaintxt > p {
   margin-top : 0 50px;
   padding : 30px;
@@ -33,14 +41,13 @@
   font-size : 15px;
   font-weight : 500;
 }
-
 .visionTxt {
   text-align : center;
   margin-bottom : 50px;
 }
 
 .visionTxt > h2 {
-  font-size : 25px;
+  font-size : 22px;
   font-weight : 500;
   color : #444;
 }
@@ -81,6 +88,11 @@
   text-align : right;
 }
 
+.histRight {
+  position : relative;
+  margin-left : 50%;
+}
+
 .histLeftImg{
   position : absolute;
   top : 12px;
@@ -89,20 +101,6 @@
   height : 21px;
   background : url(../public/imgs/hist_button.png) no-repeat;
 }
-
-.histLeftTxt {
-  padding-right :50px;
-}
-
-.histLeftTxt > h2 {
-  color : #303097
-}
-
-.histRight {
-  position : relative;
-  margin-left : 50%;
-}
-
 
 .histRightImg{
   position : absolute;
@@ -117,76 +115,73 @@
   padding-left :50px;
 }
 
-.histRightTxt > h2 {
+.histLeftTxt {
+  padding-right :50px;
+}
+
+
+.histLeftTxt > h2, .histRightTxt > h2 {
   color : #303097
+}
+
+.histLeftTxt > p , .histRightTxt > p {
+  font-size : 14px;
+  font-weight : 400;
+  color : #666;
+  margin-top : 5px;
+  margin-right : 10px;
+}
+.histLeftTxt > p > span , .histRightTxt > p > span {
+  font-size:12px;
+  color : #999;
+}
+
+.histRightTxt > p > span , .histRightTxt > p > span {
+  font-size:12px;
+  color : #999;
 }
 
 .benefitList {
   overflow: hidden;
+  margin-bottom : 50px;
 }
 
 .benefitList > li{
   float : left;
   width : 250px;
-  height : 130px;
+  height : 90px;
+  text-align : center;
   margin : 10px 20px;
-  border : 1px solid #e0e0e0;
+  border-top : 1px solid #e0e0e0;
 }
 
 .benefitList > li > div {
-  margin : 40px 10px;
+  margin : 20px 30px;
 } 
 
 .benefitList > li > div > h1{
-  font-size : 25px;
+  font-size : 19px;
   font-weight : 500;
-  color : #666;
+  color : #333;
+  margin-bottom : 5px;
 }
 
 .benefitList > li > div > p{
-  font-size : 15px;
-  font-weight : 500;
-  color : #666;
+  font-size : 13px;
+  font-weight : 400;
+  color : #999;
 
 }
 
 .orgaMain {
-  height : 500px;
-  text-align : center;
+  margin : 0 auto;
+  padding-bottom : 100px;
+  max-width : 720px;
 }
 
-.orgaLine1 {
-  position : relative;
-  height : 100px;
-}
-.orgaLine1 > h1{
-  top : 0;
-  left : 50%;
-  margin-left : -125px;
-  width : 250px;
-  font-size : 20px;
-  font-weight : 500;
-  color : #fff;
-  position : absolute;
-  background-color : #005ca9;
-}
-
-.orgaLine2 {
-  position : relative;
-  height : 100px;
-}
-
-.orgaLine2 > h1 {
-  top : 0;
-  left : 85%;
-  margin-left : -125px;
-  width : 250px;
-  font-size : 20px;
-  font-weight : 500;
-  color : #fff;
-  position : absolute;
-  background-color : #005ca9;
-
+.orgaMain > img {
+  max-width : 100%;
+  height : auto;
 }
 
 .emBlue {
