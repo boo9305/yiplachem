@@ -11,9 +11,9 @@ function  Header () {
   ]
   
   const arrSubNavURL = [
-    ["/ceogreeting", "/history", "/vision", "/benefit", "/organization" , "/map"],
-    ["/products"],
-    [""],
+    ["/intro/ceogreeting", "/intro/history", "/intro/vision", "/intro/benefit", "/intro/organization" , "/intro/map"],
+    ["/product/products", "/", "/", "/", "/", "/"],
+    ["/develop/lab", "/develop/status", "develop/device", "/develop/certification"],
     [""],
     [""]
   ]
@@ -96,14 +96,18 @@ function  Header () {
                 <div>
                   <ul>
                     {arrSubNav[1].map((item, index) => 
-                      <li key={index}>{item}</li>
+                      <li key={index}>
+                        <Link href={arrSubNavURL[1][index]} ><a>{item}</a></Link>
+                      </li>
                     )}
                   </ul>
                 </div>
                 <div>
                   <ul>
                     {arrSubNav[2].map((item, index) => 
-                      <li key={index}>{item}</li>
+                      <li>
+                        <Link href={arrSubNavURL[2][index]} ><a>{item}</a></Link>
+                      </li>
                     )}
                   </ul>
                 </div>

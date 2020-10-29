@@ -1,6 +1,5 @@
-import SubLayout from '../components/SubLayout' 
-
-import sty from '../styles/ceogreeting.module.css'
+import SubLayout from '../../components/SubLayout' 
+import sty from '../../styles/benefit.module.css'
 
 export default (props) => {
   return (

@@ -1,0 +1,41 @@
+.benefitList {
+  overflow: hidden;
+  margin-bottom : 50px;
+}
+
+.benefitList > li{
+  float : left;
+  width : 33%;
+  height : 90px;
+  text-align : center;
+  margin : 10px 0;
+}
+
+.benefitList > li > div {
+  border-top : 1px solid #e0e0e0;
+  margin : 20px 30px;
+  padding-top: 10px;
+} 
+
+.benefitList > li > div > h1{
+  font-size : 19px;
+  font-weight : 500;
+  color : #333;
+  margin-bottom : 5px;
+}
+
+.benefitList > li > div > p{
+  font-size : 13px;
+  font-weight : 400;
+  color : #999;
+
+}
+
+@media (max-width : 1080px) {
+  .benefitList {
+    text-align: center;;
+  }
+  .benefitList > li {
+    width : 50%;
+  }
+}

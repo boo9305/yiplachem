@@ -1,0 +1,36 @@
+.labMain {
+  margin-bottom : 100px;
+}
+.labMain > h1 {
+  font-size :25px;
+  font-weight : 500;
+  color : #555;
+}
+
+.labMain > h2 {
+  font-size :23px;
+  font-weight : 300;
+  color : #555;
+}
+
+.labMain > p {
+  font-size :15px;
+  font-weight : 300;
+  color : #777;
+}
+
+.blueTxt {
+  color : #043285;
+  font-weight : 500;
+}
+
+.statusMain {
+  margin-right : 100px;
+  margin-left : 50px;
+  margin-bottom : 50px;
+  text-align : center;
+}
+
+.statusMain > img{
+  max-width : 100%;
+}

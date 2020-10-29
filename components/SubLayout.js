@@ -14,9 +14,9 @@ const SubLayout =  (props) => {
   ]
   
   const arrSubNavURL = [
-    ["/ceogreeting", "/history", "/vision", "/benefit", "/organization" , "/map"],
-    ["/products"],
-    [""],
+    ["/intro/ceogreeting", "/intro/history", "/intro/vision", "/intro/benefit", "/intro/organization" , "/intro/map"],
+    ["/product/products", "/", "/", "/", "/", "/"],
+    ["/develop/lab", "/develop/status", "/develop/device", "/develop/certification"],
     [""],
     [""]
   ]
@@ -46,7 +46,7 @@ const SubLayout =  (props) => {
                 if (index == props.subNavIndex) { cls = "sub-nav-list-on" } 
                 return (
                   <li className={cls}>
-                    <Link href={arrSubNavURL[0][index]}><a>{item}</a></Link>
+                    <Link href={arrSubNavURL[props.navIndex][index]}><a>{item}</a></Link>
                   </li>
                 ) 
               }

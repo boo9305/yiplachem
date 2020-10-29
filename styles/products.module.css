@@ -1,0 +1,37 @@
+.productMain > table{
+  width : 100%;
+  border-collapse : collapse;
+}
+
+.productMain > table > thead > tr > th  {
+  border-top : 3px solid #303097;
+  border-right : 1px solid #043285;
+  border-left : 1px solid #043285;
+  height : 40px;
+  color : #303097;
+  background-color : #f8f8fe;
+
+  font-size : 15px;
+  font-weight : 500
+}
+
+.tbTh1 {
+  width : 150px;
+}
+
+.tbTh2 {
+  width : 200px;
+}
+
+.tbTh3 {
+  text-align : left;
+  padding-left : 10px;
+}
+
+.productMain > table > tbody > tr > th  {
+  border : 1px solid black;
+  height : 40px;
+  font-size : 13px;
+  font-weight : 300;
+}
+

@@ -1,0 +1,33 @@
+.visionTxt {
+  text-align : center;
+  margin-bottom : 50px;
+}
+
+.visionTxt > h2 {
+  margin : 10px;
+  font-size : 22px;
+  font-weight : 500;
+  color : #444;
+}
+
+.visionImgWrap {
+  text-align : center;
+  margin-bottom : 100px;
+}
+
+.visionImgWrap > img {
+  max-width : 80%;
+  height : auto;
+}
+
+  
+@media (max-width : 1080px) {
+  .ceoImg > h1 {
+    font-size : 15px;
+  }
+
+  .ceoMaintxt > p {
+    font-size : 12px;
+  }
+  
+}

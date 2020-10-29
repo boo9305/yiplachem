@@ -1,6 +1,5 @@
-import SubLayout from '../components/SubLayout' 
-
-import sty from '../styles/ceogreeting.module.css'
+import SubLayout from '../../components/SubLayout' 
+import sty from '../../styles/vision.module.css'
 
 export default (props) => {
   return (
@@ -12,12 +11,12 @@ export default (props) => {
         </div>
 
         <div className={sty.visionImgWrap}>
-          <img src="./imgs/vision.png" />
+          <img src="/imgs/vision.png" />
           
         </div>
 
         <div className={sty.visionImgWrap}>
-        <img src="./imgs/vision2.png" />
+        <img src="/imgs/vision2.png" />
         </div>
         
       </div>
