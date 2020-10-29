@@ -66,7 +66,7 @@ ul, li {
   text-align : center;
   line-height:60px;
   font-weight : 500;
-  color : #333;
+  color : #666;
 }
 
 .nav-logo {
@@ -85,8 +85,8 @@ ul, li {
 .nav-right-menu {
   position : fixed;
   top : 0px;
-  right : 0;
-  width : 0%;
+  right : -100%;
+  width : 100%;
   height : 100%;
   background-color : #fff;
   z-index : 10;
@@ -138,9 +138,18 @@ ul, li {
   height : 45px;
   text-align : center;
   padding : 0 10px;
+}
+
+
+.nav-down-wrap-inner > div > ul > li > a{
   font-size : 15px;
-  font-weight: 500;
+  font-weight: 400;
   color : #666;
+}
+
+.nav-down-wrap-inner > div > ul > li > a:hover {
+  font-weight: 500;
+  color : #043285 !important;
 }
 
 
@@ -211,12 +220,18 @@ ul, li {
   color : #666
 }
 
+.sub-nav-list-off > a:hover {
+  color : #043285;
+  font-weight : 500;
+}
+
 .sub-nav-list-on {
   height : 100%;
   position: relative;
 }
 
 .sub-nav-list-on > a{
+  font-weight : 500;
   color : #043285 !important;
 }
 
@@ -245,6 +260,7 @@ ul, li {
 
 .sub-nav-title-txt > div > h3 {
   font-size : 13px;
+  font-weight : 500;
   color : #666;
 
 }

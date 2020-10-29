@@ -38,23 +38,29 @@ function  Header () {
   }
 
   const onRightBtnClick = () => {
-    let width = navRightMenu.style.width;
-    if (width == "" || width == "0%") {
-      navRightMenu.style.width = "100%"  
+    let right = navRightMenu.style.right;
+    console.log(right)
+    if (right == null || right == "0px") {
+      navRightMenu.style.right = "-100%"  
     } else {
-      navRightMenu.style.width = "0%"  
+      navRightMenu.style.right = "0px"  
     }
   }
   return(
     <div className="header">
-      <div ref={(ref) => blindRef = ref}  className="blind"></div>
+      <div ref={(ref) => blindRef = ref} className="blind"></div>
       <div ref={ref => navRightMenu = ref} className="nav-right-menu">
         <ul>
           {arrNav.map((item, index) => 
-            <li>
+            <li key={index}>
               <Link href={arrSubNavURL[index][0]} ><a>{item}</a></Link>
             </li>
           )}
+          <li>
+            <div onClick={onRightBtnClick}>
+              Exit
+            </div>
+          </li>
         </ul>
       </div>
       <div className="lang">
@@ -105,7 +111,7 @@ function  Header () {
                 <div>
                   <ul>
                     {arrSubNav[2].map((item, index) => 
-                      <li>
+                      <li key={index}>
                         <Link href={arrSubNavURL[2][index]} ><a>{item}</a></Link>
                       </li>
                     )}

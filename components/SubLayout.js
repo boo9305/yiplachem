@@ -45,7 +45,7 @@ const SubLayout =  (props) => {
                 let cls = "sub-nav-list-off"
                 if (index == props.subNavIndex) { cls = "sub-nav-list-on" } 
                 return (
-                  <li className={cls}>
+                  <li key={index} className={cls}>
                     <Link href={arrSubNavURL[props.navIndex][index]}><a>{item}</a></Link>
                   </li>
                 ) 
