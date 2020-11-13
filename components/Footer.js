@@ -10,6 +10,9 @@ export default () => {
             <p>COPYRIGHT(c)2016 (주)영인플라켐. ALL RIGHT RESERVED.</p>
 
           </div>
+          <div className="footer-icon">
+            <div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a>,  <a href="https://www.flaticon.com/kr/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon"> www.flaticon.com</a></div>          
+          </div>
         </div>
       </div>
     </div>

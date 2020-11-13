@@ -1,12 +1,11 @@
 .benefitList {
   overflow: hidden;
-  margin-bottom : 50px;
 }
 
 .benefitList > li{
   float : left;
   width : 33%;
-  height : 90px;
+  height : 100px;
   text-align : center;
   margin : 10px 0;
 }

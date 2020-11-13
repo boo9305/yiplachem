@@ -1,36 +1,120 @@
+
 .productMain > table{
   width : 100%;
-  border-collapse : collapse;
 }
 
-.productMain > table > thead > tr > th  {
-  border-top : 3px solid #303097;
-  border-right : 1px solid #043285;
-  border-left : 1px solid #043285;
+.ldsMain {
+  text-align : center;
+}
+
+.ldsMain > img {
+  width : 60%;
+}
+
+.table > thead > tr {
+  width : 100%;
+}
+.table > thead > tr > th  {
+  padding : 3px;
+  border-top : 2px solid #303097;
+  border-right : 1px solid #dfdfdf;
+  border-bottom : 1px solid #303097;
   height : 40px;
   color : #303097;
   background-color : #f8f8fe;
-
-  font-size : 15px;
+  font-size : 13px;
   font-weight : 500
 }
 
-.tbTh1 {
-  width : 150px;
+.th1 {
+  width : 15% !important;
 }
 
-.tbTh2 {
-  width : 200px;
+.th2 {
+  width : 20% !important;
 }
 
-.tbTh3 {
+.th3 {
   text-align : left;
-  padding-left : 10px;
+  padding : 10px;
 }
 
-.productMain > table > tbody > tr > th  {
-  border : 1px solid black;
-  height : 40px;
-  font-size : 13px;
+.table > tbody > tr > th {
+  border-right : 1px solid #dfdfdf;
+  border-top : 1px solid #dfdfdf;
+  border-bottom : 1px solid #dfdfdf;
+  height : 70px;
+  font-size : 12px;
   font-weight : 300;
+  color : #666;
+}
+
+.table > tbody > tr > td {
+  border : 1px solid #dfdfdf;
+  height : 40px;
+  font-size : 12px;
+  font-weight : 300;
+  text-align : center;
+  color : #666;
+}
+
+.lastTh {
+  border-right : 1px solid #fff !important;
+}
+
+.lastTd {
+  text-align : left !important;
+  padding : 10px;
+  border-right : 1px solid #fff !important;
+}
+
+.productInner {
+}
+
+.productInner  > table {
+  margin-bottom : 50px;
+}
+
+.productInner > h4 {
+  font-size : 25px;  
+  font-weight : 300;
+  color : #333;
+  margin-bottom : 30px;
+  margin-left : 5px;
+  padding-left : 10px;
+  border-left : 3px solid #d13b56;
+}
+
+.productInner > h4 > span{
+  font-size : 15px;
+  color : #999;
+}
+
+.productInner  > h5 {
+  font-size : 15px;  
+  font-weight : 500;
+  color : #666;
+  margin : 5px;
+  padding-left : 5px;
+  padding-bottom : 5px;
+}
+
+.productInner  > h5 > span{
+  font-size : 12px;
+}
+.productInner > table > thead > tr > th:not(:last-child) { width : 60px; }
+
+.znicFirst { width : 15% !important; }
+
+.znicA { width : 5% !important; }
+
+
+@media (max-width : 1080px) {
+  .productMain {
+    overflow-X: scroll;
+  }
+  .productInner {
+    width : 1000px;
+    overflow : scroll;
+  }
 }

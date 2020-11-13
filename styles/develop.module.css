@@ -1,5 +1,5 @@
 .labMain {
-  margin : 0 20px 100px 20px;
+  margin : 0 20px 0px 20px;
 }
 .labMain > h1 {
   font-size :25px;
@@ -27,7 +27,6 @@
 .statusMain {
   margin-right : 100px;
   margin-left : 50px;
-  margin-bottom : 50px;
   text-align : center;
 }
 
@@ -37,7 +36,6 @@
 
 .deviceMain {
   overflow: hidden;
-  margin-bottom : 100px;
 }
 
 .deviceMain > ul > li{
@@ -81,7 +79,6 @@
 
 .certiMain {
   overflow: hidden;
-  margin-bottom : 100px;
 }
 
 .certiMain > ul > li{

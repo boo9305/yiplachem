@@ -1,10 +1,16 @@
 a {
+  display : block;
   text-decoration : none;
   color : #555;
 }
 
 ul, li {
   list-style : none;
+  border-collapse : collapse;
+}
+
+table {
+  border-collapse : collapse;
 }
 
 * {
@@ -26,7 +32,13 @@ ul, li {
 
 .sub-inner {
   margin : 0 auto;
+  margin-bottom : 100px;
   max-width : 880px;
+}
+
+.section-inner {
+  margin : 0 auto;
+  max-width : 1200px;
 }
 
 
@@ -44,6 +56,7 @@ ul, li {
 }
 
 .lang-list > li > a {
+  margin-top : 5px; 
   font-size : 12px;
   padding : 0 10px;
 }
@@ -65,56 +78,79 @@ ul, li {
   float : left;
   text-align : center;
   line-height:60px;
-  font-weight : 500;
-  color : #666;
+  font-weight : 300;
+  color : #333;
 }
 
+.nav-list > ul > li > a{
+  font-weight : 300;
+  color : #333;
+}
 .nav-logo {
   float : left;
   margin-top : 15px;
-  margin-right : 125px;
+  margin-right : 120px;
 }
 
 .nav-right-btn {
   float : right;
   display: none;
-  line-height : 60px;
+  line-height : 75px;
   padding-right : 15px;
+}
+.nav-right-btn > img{
+  height : 25px;
 }
 
 .nav-right-menu {
   position : fixed;
-  top : 0px;
   right : -100%;
   width : 100%;
   height : 100%;
   background-color : #fff;
   z-index : 10;
-  overflow-y : auto;
+  overflow : hidden;
   transition : all 0.5s;
 }
 .nav-right-menu > ul > li{
-  padding : 10px;
-  border-bottom : 1px solid #dfdfdf;;
+  border-top: 1px solid #dfdfdf;;
+}
+.nav-right-menu > ul > li > a {
+  padding : 10px 30px 10px 15px; 
+}
+.nav-right-menu > ul > li:hover{
+}
+
+.nav-right-menu-off:hover > a{
+  color : #043285;
+  font-weight : 500;
+}
+
+.nav-right-menu-on {
+  background-color : #043285 !important;
+}
+.nav-right-menu-on > a{
+  color : #fff !important;
 }
 
 .nav-down-wrap {
   position: absolute;
-  visibility : hidden;
   top : 90px;
   left : 0;
   height : 0px;
   width : 100%;;
+
+  visibility : hidden;
+  overflow: hidden;
   border-top : 1px solid #dfdfdf;
   z-index : 99;
   background: #fff;
   transition : all 0.5s;
-  overflow:hidden;
 }
 
 .blind {
   position: absolute;
-  top : 90px;
+  top : 100px;
   left : 0;
   width : 100%;
   height : 0;
@@ -161,13 +197,41 @@ ul, li {
   background-size : cover;
 }
 
+/*background : url(../public/imgs/main_txt.png) no-repeat 50% 50%;*/
 .banner-txt {
   position : absolute;
-  top : 100px;
+  top : 130px;
   width : 500px;
   height : 230px;
-  background : url(../public/imgs/main_txt.png) no-repeat 50% 50%;
+  margin-left : 100px;
   background-size : cover;
+  animation : fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    top : 200px;
+  }
+  to {
+    opacity: 1;
+    top : 130px;
+  }
+}
+
+
+.banner-txt > h1{
+  display : inline;
+  color : #fff;
+  font-size : 25px;
+  font-weight : 300;
+}
+
+.banner-txt > h2{
+  color : #eee;
+  font-style : oblique;
+  font-size : 50px;
+  font-weight : 400;
 }
 
 .sub-banner {
@@ -195,44 +259,49 @@ ul, li {
   padding-right : 10px;
   line-height : 40px;
   font-size : 12px;
-  font-weight : 500;
+  font-weight : 300;
+  color : #333
 }
 
 .sub-nav-list {
-  padding: 10px;
+  margin : 50px;
   text-align : center;
-  border-bottom : 1px solid #dfdfdf;
   height : 20px;
 }
 
-.sub-nav-list > div > ul > li:first-child {
-  border-left : 1px solid #dfdfdf;
-}
+.sub-nav-list > div > ul {
+  width : 100%;
+ }
 
-.sub-nav-list > div > ul > li {
+ .sub-nav-list > div > ul > li {
   display : inline-block;
-  width : 15%;
-  border-right : 1px solid #dfdfdf;
-  border-collapse : collapse;
-  font-size : 15px;
+  width : 11%;
+  height : 50px;
+  line-height: 50px;
+  border : 1px solid #dfdfdf;
+  border-bottom : 1px solid #0098D9;
+
   overflow: hidden;
-  height : 20px;
-  color : #666
 }
 
-.sub-nav-list-off > a:hover {
+.sub-nav-list > div > ul > li > a{
+  font-size : 15px;
+}
+
+.sub-nav-list-off:hover > a {
   color : #043285;
   font-weight : 500;
 }
 
 .sub-nav-list-on {
   height : 100%;
+  background-color : #004098;
   position: relative;
 }
 
 .sub-nav-list-on > a{
   font-weight : 500;
-  color : #043285 !important;
+  color : #fff !important;
 }
 
 .sub-nav-list-on::after {
@@ -265,89 +334,94 @@ ul, li {
 
 }
 
-.section1 {
-  height: 500px;
-  background-color : #f3f2ee;
+.section0 {
+  height: 650px;
+  padding-top : 20px;
 }
 
-.section1-title {
-  padding : 20px 0;
-  color : #444;
-}
-
-.section1-main {
-  height : 360px;
-}
-
-.section1-main > div{
+.section0-list > li{
   float : left;
-  width : 25%;
+  width : 33%;
+  transition : all 0.5s
 }
 
-.section1-main > div > div{
-  margin: 10px;
-  height : 140px;
-  border : 3px solid #dfdfdf;
+
+.section0-list > li > div {
+  margin : 10px;
+  height : 400px;
   text-align : center;
 }
 
-.section1-main > div > div > h2 {
-  padding-top : 40px;
-  font-size:20px;
-  font-weight : 600;
-  color : #043285;
+.section0-list > li > div > h1{
+  margin : 30px;
+  font-size : 28px;
+  font-weight : 500;
+  color : #0e4e7c;
 }
 
-.section1-main > div > div > p {
+.section0-list > li > div > p{
+  padding : 0 30px 0 30px;
+  font-size : 15px;
+  font-weight : 300;
   color : #666;
-  font-size : 12px;
-
+  height : 120px;
 }
 
-.section1-btn {
-  text-align: center;
+.section0-list > li > div > img {
+  margin-top : 50px;
+  margin-bottom : 50px;
+  width : 200px;
+  transition : all 0.5s
+}
+.section0-list > li > div:hover > img {
+  margin-top : 0px;
+  width : 250px; 
 }
 
-.section1-btn > a {
-  padding : 5px 40px;
-  background-color : #043285;
-  color : #fff;
+.section0-list > li > div > div {
+  width : 200px;
+  margin : 0 auto;
+  transition : all 0.5s
+}
+.section0-list > li > div > div > a{
+  font-size : 15px;
+  padding : 10px;
+  border : 1px solid #dfdfdf;
 }
 
-.section2 {
-  height: 480px;
+.section0-list > li > div:hover > div > a{
+  background-color : #0e4e7c;
+  color : #fff
 }
-
-.section2-main > ul > li{
-  float : left;
-  width : 33%;
-}
-
-.section2-main > ul > li > div{
-  position : relative;
-  margin : 10px;
-  height : 300px;
-  background : url(../public/imgs/main_visual.jpg) no-repeat 50% 50%;
-  background-size : cover;
-}
-
-.section2-main > ul > li > div > div{
-  height : 100%;
-  background-color : rgba(0,0,0,0.5)
-}
-
 .footer {
   background-color : #414143;
   height : 120px;
 }
 
 .footer-info {
-  padding-top : 50px;
+  padding-top : 30px;
 }
 
 .footer-info > p {
   color : #aaa;
   font-size : 12px;
+}
+
+.footer-icon > p {
+  color : #aaa;
+  font-size : 12px;
+}
+
+.footer-icon  > div {
+  color : #aaa;
+  font-size : 12px;
+  display : inline;
+}
+
+.footer-icon  > div > a{
+  color : #aaa;
+  font-size : 12px;
+  display : inline;
 }
 
 .em-blue {

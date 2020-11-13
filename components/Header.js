@@ -2,20 +2,22 @@ import Link from 'next/link'
 
 import {useRef} from  'react'
 
-function  Header () {
+function  Header (props) {
   const arrNav = ["회사소개", "제품소개", "연구개발", "갤러리", "제품문의"]
   const arrSubNav = [
     ["CEO 인사말", "연혁", "비전", "복리후생", "조직도", "오시는길"],
-    [ "Products", "금도금", "합금도금", "무전해니켈도금", "환경친화제품", "아연 및 아연합금도금액 / 3가 크로메이트 LDS PROCESS" ],
+    [ "Products", "금도금", "합금도금", "무전해니켈도금", "환경친화제품", "아연합금도금액" , "LDS PROCESS" ],
     [ "부설연구소", "연구현황", "보유기기", "인증서" ], 
+    ["갤러리"],
+    ["제품문의"],
   ]
   
   const arrSubNavURL = [
     ["/intro/ceogreeting", "/intro/history", "/intro/vision", "/intro/benefit", "/intro/organization" , "/intro/map"],
-    ["/product/products", "/", "/", "/", "/", "/"],
-    ["/develop/lab", "/develop/status", "develop/device", "/develop/certification"],
-    [""],
-    [""]
+    ["/product/products", "/product/gold",  "/product/alloy", "/product/nickel", "/product/eco", "/product/znic", "/product/lds"],
+    ["/develop/lab", "/develop/status", "/develop/device", "/develop/certification"],
+    ["/gallery"],
+    ["/support"]
   ]
 
   let navDownWrapRef = null
@@ -51,16 +53,16 @@ function  Header () {
       <div ref={(ref) => blindRef = ref} className="blind"></div>
       <div ref={ref => navRightMenu = ref} className="nav-right-menu">
         <ul>
-          {arrNav.map((item, index) => 
-            <li key={index}>
-              <Link href={arrSubNavURL[index][0]} ><a>{item}</a></Link>
-            </li>
+          {arrNav.map((item, index) => {
+            let cls = "nav-right-menu-off"
+            if (index == props.navIndex) cls = "nav-right-menu-on"
+            return (
+              <li key={index} className={cls}>
+                <Link href={arrSubNavURL[index][0]} ><a>{item}</a></Link>
+              </li>
+            )
+            }
           )}
-          <li>
-            <div onClick={onRightBtnClick}>
-              Exit
-            </div>
-          </li>
         </ul>
       </div>
       <div className="lang">
@@ -74,7 +76,7 @@ function  Header () {
       <div className="nav">
         <div className="inner">
           <div className="nav-right-btn" onClick={onRightBtnClick}>
-            Menu            
+            <img src="/svgs/menu.svg" alt=""></img>
           </div>
 
           <div className="nav-logo">
@@ -83,9 +85,13 @@ function  Header () {
           <div className="nav-list"
             onMouseOver={onHandleMouseOver} onMouseOut={onHandleMouseOut}>
             <ul>
-              {arrNav.map((item, index) => 
-                <li key={index}>{item}</li> 
-              )}
+              {arrNav.map((item, index) => {
+                let result = <li key={index}>{item}</li> 
+                  if (index > 2) {
+                    result = <li key={index}><a href={arrSubNavURL[index][0]}>{item}</a></li> 
+                  }
+                return result
+              })}
             </ul>
             <div ref={(ref) => navDownWrapRef = ref} className="nav-down-wrap">
               <div className="inner nav-down-wrap-inner">

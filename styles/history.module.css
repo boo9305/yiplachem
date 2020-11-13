@@ -1,6 +1,7 @@
 .histMain {
   position : relative;
-  height : 1000px;
+  overflow : hidden;
+  margin-bottom : 50px;
 }
 
 .histCenterLine {
@@ -8,7 +9,7 @@
   top : 0;
   left : 50%;
   border : 1px solid black;
-  height : 900px;
+  height : 100%;
 }
 
 .histLeft {

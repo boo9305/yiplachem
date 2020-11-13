@@ -1,53 +1,128 @@
 @media (max-width:1080px) {
 
-.header {
-}
+  .header {
+    margin-top : 60px;
+  }
 
-.header > .lang {
-  display : none;
-}
+  .header > .lang {
+    display : none;
+  }
 
-.nav-list {
-  display : none;
- }
+  .nav {
+    position:fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    background-color : #fff;
+    z-index:99;
+    border-bottom : 1px solid #dfdfdf;
+  }
 
- .nav-right-btn {
-  display : block;
- }
- 
- .nav-right-menu {
- }
+  .nav-logo {
+    margin-left : 10px;
+  }
 
- .sub-nav-list {
-   padding : 5px;
- }
- .sub-nav-list > div > ul > li {
-   font-size : 12px;
- }
+  .sub-banner {
+  }
 
- .banner {
-  height : 300px;
- }
+  .nav-list {
+    display : none;
+  }
 
-.banner-txt {
-  width : 250px;
-  height : 115px;
-  left : 50%;
-  margin-left : -125px;
-}
-.sub-banner {
-  height : 80px;
-}
-.sub-banner-txt {
-  width : 300px;
-  height : 65px;
-}
+  .nav-right-btn {
+    display : block;
+  }
 
-.section1-main > div > div > h2 {
-  font-size : 15px;
-}
-.section1-main > div > div > p {
-  font-size : 10px;
-}
+  .nav-right-menu {
+  }
+
+  .sub-nav-list {
+    padding : 5px;
+    overflow : auto;
+    height : 100%;
+    margin : 20px 50px 0 50px;
+  }
+  
+  .sub-nav-list > div > ul {
+  }
+  .sub-nav-list > div > ul > li {
+    height : 40px;
+    line-height : 40px;
+    border : 1px solid #dfdfdf;
+  }
+  
+  .sub-nav-list-on {
+    width : 90% !important;
+  }
+  .sub-nav-list-off {
+    width : 90% !important;
+  }
+
+  .banner {
+    height : 200px;
+    background : url(../public/imgs/main_visual.jpg) no-repeat 50% 0%;
+    background-size : cover;
+  }
+
+  .banner-txt {
+    top : 50px;
+    height : 115px;
+    width : 250px;
+    margin-left : 40px;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      top : 80px;
+    }
+    to {
+      opacity: 1;
+      top : 50px;
+    }
+  }
+
+  
+  .banner-txt > h1 {
+    font-size : 12px;
+  }
+  .banner-txt > h2 {
+    font-size : 16px;
+  }
+  .banner-txt > h2 > span{
+    font-size : 25px;
+  }
+  .sub-banner {
+    height : 80px;
+  }
+  .sub-banner-txt {
+    width : 300px;
+    height : 65px;
+  }
+
+  .section0 {
+    height : 1800px;
+  }
+  .section0-list > li{
+    width : 100%;
+  }
+
+  .section0-list > li > div {
+    height : 550px;
+    border-bottom : 1px solid #dfdfdf;
+  }
+  .section0-list > li:last-child > div{
+    border-bottom : 1px solid #fff;
+  }
+
+  .section0-list > li > div > img {
+    width : 150px;
+  }
+  .section0-list > li > div:hover > img {
+    width : 200px;
+  }
+  .section0-list > li > div > div {
+    width : 300px;
+  }
 
 }
