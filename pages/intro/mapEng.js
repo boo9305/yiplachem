@@ -34,13 +34,13 @@ function map (props) {
       marker.setMap(map);
   }, [])
   return (
-    <SubLayout location="Intro > CEO" navIndex="0" subNavIndex="5">
+    <SubLayout location="Intro > CEO" navIndex="0" subNavIndex="5" lang="eng">
       <div className="sub-inner">
         <div className="map-txt">
-          <p>- 주소 경기도 안산시 단원구 신원로 76(성곡동),반월공단 606B 9-1L 15408</p>
-          <p>- 주차안내 건물 내, 주차시설 및 주변 공영주차장 이용</p>
-          <p>- 연락처 Tel. 031-491-9406 / Fax. 031-491-9401</p>
-          <p>- 대표메일 byb89@yiplachem.com</p>
+          <p>Address 76,Sinwon-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Korea 15408</p>
+          <p>(Banwol industrial Complex 606B 9-1L)</p>
+          <p>Contact Tel. 031-491-9406 / Fax. 031-491-9401</p>
+          <p>Representative mail byb89@yiplachem.com</p>
         </div>
         <div id='map'></div>
 
@@ -56,7 +56,6 @@ function map (props) {
           font-weight : 400;
           color : #333;
         }
-          
       `} </style>
     </SubLayout>
   )

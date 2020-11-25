@@ -5,7 +5,7 @@
 .benefitList > li{
   float : left;
   width : 33%;
-  height : 100px;
+  height : 130px;
   text-align : center;
   margin : 10px 0;
 }
@@ -36,5 +36,12 @@
   }
   .benefitList > li {
     width : 50%;
+  }
+
+  .benefitList > li > div > h1{
+    font-size : 15px;
+  }
+  .benefitList > li > div > p{
+    font-size : 12px;
   }
 }

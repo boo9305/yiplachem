@@ -7,14 +7,14 @@ const Home = (props) => {
   }, []) 
 
   return (
-    <Layout>
+    <Layout lang="eng">
       <div className="main">
         <div className="banner">
           <div className="inner">
             <div className="banner-txt">
-              <h1>고객의 성공을 위해 최선을 다하는것이</h1>
-              <h2>(주)영인플라켐의</h2>
-              <h2> 최고의 가치입니다.</h2>
+              <h1>It is the best value of</h1>
+              <h2>Youngin Plachem to do</h2>
+              <h3>the best for the customer's success</h3>
             </div>
             
           </div>
@@ -25,31 +25,31 @@ const Home = (props) => {
             <ul className="section0-list">
               <li>
                 <div>
-                  <h1>제품 소개</h1>
-                  <p>영인플라켐은 "금도금", "합금도금", "무전해니켈도금", "환경친화제품", "아연합금도금액", "3가크로메이트", "후처리제" 제품을 보유하고 있습니다.</p>
+                  <h1>Products</h1>
+                  <p>Youngin Plachem has products such as "Gold Plating", "Alloy Plating", "Electroless Nickel Plating" "Environment-Friendly Products", "Zn and Zn Alloy Plating"</p>
                   <img src="/imgs/section0-item1.png" alt=""></img>
                   <div>
-                    <a href="/product/products">더보기</a>
+                    <a href="/product/products">More</a>
                   </div>
                 </div>
               </li>
               <li>
                 <div>
-                  <h1>연구 개발</h1>
-                  <p>영인플라켐의 부설 연구소, 연구현황,<br/>보유기기, 인증서를 소개합니다</p>
+                  <h1>R & D</h1>
+                  <p>Youngin Plachem's Research Status, Equipment, Certificate</p>
                   <img src="/imgs/section0-item2.png" alt=""></img>
                   <div>
-                    <a href="/develop/lab">더보기</a>
+                    <a href="/develop/lab">More</a>
                   </div>
                 </div>
               </li>
               <li>
                 <div>
-                  <h1>제품 문의</h1>
-                  <p>영인플라켐은 고객 이익증진 뿐만아니라<br/>고객제품 품질 향상을 위해 최선을 다합니다.</p>
+                  <h1>Contact Us</h1>
+                  <p>Youngin Plachem try every day for satisfaction of customer's more requirement with continuous R&D and innovation</p>
                   <img src="/imgs/section0-item3.png" alt=""></img>
                   <div>
-                    <a href="/support">더보기</a>
+                    <a href="/support">More</a>
                   </div>
                 </div>
               </li>

@@ -5,29 +5,24 @@ import Layout from './Layout'
 import Header from "./Header"
 import Footer from "./Footer"
 
-const SubLayout =  (props) => {
-  const arrNav = ["회사소개", "제품소개", "연구개발", "갤러리", "제품문의"]
-  const arrSubNav = [
-    ["CEO 인사말", "연혁", "비전", "복리후생", "조직도", "오시는길"],
-    [ "Products", "금도금", "합금도금", "무전해니켈도금", "환경친화제품", "아연합금도금액" , "LDS PROCESS" ],
-    [ "부설연구소", "연구현황", "보유기기", "인증서" ], 
-    ["갤러리"],
-    ["제품문의"],
-  ]
+import { _arrNav, _arrSubNav, _arrSubNavURL } from './Nav'
+import { _arrNavEng, _arrSubNavEng, _arrSubNavURLEng } from './Nav'
 
-  const arrSubNavURL = [
-    ["/intro/ceogreeting", "/intro/history", "/intro/vision", "/intro/benefit", "/intro/organization" , "/intro/map"],
-    ["/product/products", "/product/gold",  "/product/alloy", "/product/nickel", "/product/eco", "/product/znic", "/product/lds"],
-    ["/develop/lab", "/develop/status", "/develop/device", "/develop/certification"],
-    ["/gallery"],
-    ["/support"]
-  ]
+const SubLayout =  (props) => {
+  const arrNav = props.lang == "eng" ? _arrNavEng : _arrNav
+  const arrSubNav = props.lang == "eng" ? _arrSubNavEng : _arrSubNav
+  const arrSubNavURL = props.lang == "eng" ? _arrSubNavURLEng : _arrSubNavURL;
 
   return (
-    <Layout navIndex={props.navIndex}>
+    <Layout navIndex={props.navIndex} lang={props.lang}>
       <div className="sub-banner">
         <div className="inner">
-          <div className="sub-banner-txt"></div>
+          {
+            props.lang == "eng" ?
+              <div className="sub-banner-txt-eng"></div>
+              :
+              <div className="sub-banner-txt"></div>
+          }
         </div>
       </div>
 
@@ -46,6 +41,7 @@ const SubLayout =  (props) => {
               {
                 let cls = "sub-nav-list-off"
                 if (index == props.subNavIndex) { cls = "sub-nav-list-on" } 
+                if (item == "") return null;
                 return (
                   <li key={index} className={cls}>
                     <Link href={arrSubNavURL[props.navIndex][index]}><a>{item}</a></Link>
@@ -60,7 +56,12 @@ const SubLayout =  (props) => {
       <div className="sub-nav-title-txt">
         <div className="inner">
           <h2>{arrSubNav[props.navIndex][props.subNavIndex]}</h2>
-          <h3>고객의 행복을 함께 만들어가는 (주)영인플라켐입니다.</h3>
+          {
+            props.lang == "eng" ?
+              <h3>Youngin Plachem, Inc. makes customers' happiness together.</h3>
+              :
+              <h3>고객의 행복을 함께 만들어가는 (주)영인플라켐입니다.</h3>
+          }
         </div>
       </div>
 

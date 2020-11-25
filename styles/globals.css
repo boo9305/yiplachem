@@ -171,7 +171,7 @@ table {
 }
 
 .nav-down-wrap-inner > div > ul > li {
-  height : 45px;
+  height : 50px;
   text-align : center;
   padding : 0 10px;
 }
@@ -184,7 +184,7 @@ table {
 }
 
 .nav-down-wrap-inner > div > ul > li > a:hover {
-  font-weight: 500;
+  font-weight: 400;
   color : #043285 !important;
 }
 
@@ -201,9 +201,9 @@ table {
 .banner-txt {
   position : absolute;
   top : 130px;
-  width : 500px;
+  width : 700px;
   height : 230px;
-  margin-left : 100px;
+  margin-left : 50px;
   background-size : cover;
   animation : fadein 2s;
 }
@@ -234,6 +234,12 @@ table {
   font-weight : 400;
 }
 
+.banner-txt > h3{
+  color : #eee;
+  font-style : oblique;
+  font-size : 30px;
+  font-weight : 400;
+}
 .sub-banner {
   height : 160px;
   width : 100%;
@@ -242,10 +248,18 @@ table {
 }
 .sub-banner-txt {
   float : right;
-  width : 600px;
+  width : 500px;
   height : 130px;
   background : url(../public/imgs/sub_main_txt.png) no-repeat 50% 50%;
-  background-size : cover;
+  background-size : contain;
+}
+
+.sub-banner-txt-eng {
+  float : right;
+  width : 500px;
+  height : 130px;
+  background : url(../public/imgs/sub_main_txt_eng.png) no-repeat 50% 50%;
+  background-size : contain;
 }
 
 .sub-location {
@@ -427,3 +441,9 @@ table {
 .em-blue {
   color : #043285
 }
+
+#map {
+  width : 900px;
+  height : 400px;
+}    
+

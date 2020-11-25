@@ -7,8 +7,8 @@ function gold (props) {
       <div className="sub-inner">
         <div className={sty.productMain}>
           <div className={sty.productInner}>
-            <h4 class="h4_tit">전기금도금</h4>
-            <h5 class="h5_tit mt30">산성 금스트라이크 도금액 <span>(Gold Strike Plating Bath)</span></h5>
+            <h4 className="h4_tit">전기금도금</h4>
+            <h5 className="h5_tit mt30">산성 금스트라이크 도금액 <span>(Gold Strike Plating Bath)</span></h5>
             <table className={sty.table} >
               <thead>
                 <tr>
@@ -37,7 +37,7 @@ function gold (props) {
                 </tr>
               </tbody>
             </table>
-            <h5 class="h5_tit mt30">약 산성 금도금액 <span>(Hard Gold Plating Bath)</span></h5>
+            <h5 className="h5_tit mt30">약 산성 금도금액 <span>(Hard Gold Plating Bath)</span></h5>
             <table className={sty.table} >
               <thead>
                 <tr>
@@ -64,7 +64,7 @@ function gold (props) {
                   <td>45</td>
                   <td>0.2~1.5</td>
                   <td>160</td>
-                  <td rowspan="4" className={sty.lastTd}>콘텍터, 접점, 단자도금과 Rack 또는 Barrel 도금에 적합하며 미려한 색상과 경도가 우수한 제품.</td>
+                  <td rowSpan="4" className={sty.lastTd}>콘텍터, 접점, 단자도금과 Rack 또는 Barrel 도금에 적합하며 미려한 색상과 경도가 우수한 제품.</td>
                 </tr>
                 <tr>
                   <th>GCI-700</th>
@@ -101,7 +101,7 @@ function gold (props) {
                 </tr>
               </tbody>
             </table>
-            <h5 class="h5_tit mt30">고속 금도금액 <span>(High Speed Gold Plating Bath)</span> - Reel To Reel</h5>
+            <h5 className="h5_tit mt30">고속 금도금액 <span>(High Speed Gold Plating Bath)</span> - Reel To Reel</h5>
             <table className={sty.table} >
               <thead>
                 <tr>
@@ -128,7 +128,7 @@ function gold (props) {
                   <td>55</td>
                   <td>1~30</td>
                   <td>140</td>
-                  <td rowspan="2" className={sty.lastTd}>콘넥터 및 단자도금, PCB도금에 적합한 고속금도금으로 미려한 색상과 경도가 우수하고 선택적 또는 전체적으로 고속도금을 하는데 적합한 제품.</td>
+                  <td rowSpan="2" className={sty.lastTd}>콘넥터 및 단자도금, PCB도금에 적합한 고속금도금으로 미려한 색상과 경도가 우수하고 선택적 또는 전체적으로 고속도금을 하는데 적합한 제품.</td>
                 </tr>
                 <tr>
                   <th>HGP-N</th>
@@ -143,7 +143,7 @@ function gold (props) {
                 </tr>
               </tbody>
             </table>
-            <h5 class="h5_tit mt30">산성 금-주석 합금도금액 <span>(Gold-Tin Alloy Plating Bath)</span></h5>
+            <h5 className="h5_tit mt30">산성 금-주석 합금도금액 <span>(Gold-Tin Alloy Plating Bath)</span></h5>
             <table className={sty.table} >
               <thead>
                 <tr>
@@ -174,7 +174,7 @@ function gold (props) {
                 </tr>
               </tbody>
             </table>
-            <h5 class="h5_tit mt30">순금도금액 <span>(Pure Gold Plating Bath)</span></h5>
+            <h5 className="h5_tit mt30">순금도금액 <span>(Pure Gold Plating Bath)</span></h5>
             <table className={sty.table} >
               <thead>
                 <tr>
@@ -204,9 +204,9 @@ function gold (props) {
               </tbody>
             </table>
           </div>        
-          <div class={sty.productInner}>
-            <h4 class="h4_tit">무전해금도금</h4>
-            <h5 class="h5_tit mt30">치환형 무전해 금도금 <span>(Immersion Electroless Gold Plating Bath)</span></h5>
+          <div className={sty.productInner}>
+            <h4 className="h4_tit">무전해금도금</h4>
+            <h5 className="h5_tit mt30">치환형 무전해 금도금 <span>(Immersion Electroless Gold Plating Bath)</span></h5>
             <table className={sty.table}  >
               <thead>
                 <tr>
@@ -233,7 +233,7 @@ function gold (props) {
                 </tr>
               </tbody>
             </table>
-            <h5 class="h5_tit mt30">치환형 무전해 두께 금도금 <span>(Immersion Electroless Thicker Gold Plating Bath)</span></h5>
+            <h5 className="h5_tit mt30">치환형 무전해 두께 금도금 <span>(Immersion Electroless Thicker Gold Plating Bath)</span></h5>
             <table className={sty.table} >
               <thead>
                 <tr>
@@ -260,7 +260,7 @@ function gold (props) {
                 </tr>
               </tbody>
             </table>
-            <h5 class="h5_tit mt30">환원형 무전해 금도금 <span>(Electroless Gold Plating Bath)</span></h5>
+            <h5 className="h5_tit mt30">환원형 무전해 금도금 <span>(Electroless Gold Plating Bath)</span></h5>
             <table className={sty.table} >
               <thead>
                 <tr>

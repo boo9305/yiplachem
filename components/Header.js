@@ -3,23 +3,6 @@ import Link from 'next/link'
 import {useRef} from  'react'
 
 function  Header (props) {
-  const arrNav = ["회사소개", "제품소개", "연구개발", "갤러리", "제품문의"]
-  const arrSubNav = [
-    ["CEO 인사말", "연혁", "비전", "복리후생", "조직도", "오시는길"],
-    [ "Products", "금도금", "합금도금", "무전해니켈도금", "환경친화제품", "아연합금도금액" , "LDS PROCESS" ],
-    [ "부설연구소", "연구현황", "보유기기", "인증서" ], 
-    ["갤러리"],
-    ["제품문의"],
-  ]
-  
-  const arrSubNavURL = [
-    ["/intro/ceogreeting", "/intro/history", "/intro/vision", "/intro/benefit", "/intro/organization" , "/intro/map"],
-    ["/product/products", "/product/gold",  "/product/alloy", "/product/nickel", "/product/eco", "/product/znic", "/product/lds"],
-    ["/develop/lab", "/develop/status", "/develop/device", "/develop/certification"],
-    ["/gallery"],
-    ["/support"]
-  ]
-
   let navDownWrapRef = null
   let blindRef = null
   
@@ -53,12 +36,14 @@ function  Header (props) {
       <div ref={(ref) => blindRef = ref} className="blind"></div>
       <div ref={ref => navRightMenu = ref} className="nav-right-menu">
         <ul>
-          {arrNav.map((item, index) => {
+          <li> <Link href="/" ><a>KOREAN</a></Link> </li>
+          <li> <Link href="/eng" ><a>ENGLISH</a></Link> </li>
+          {props.arrNav.map((item, index) => {
             let cls = "nav-right-menu-off"
             if (index == props.navIndex) cls = "nav-right-menu-on"
             return (
               <li key={index} className={cls}>
-                <Link href={arrSubNavURL[index][0]} ><a>{item}</a></Link>
+                <Link href={props.arrSubNavURL[index][0]} ><a>{item}</a></Link>
               </li>
             )
             }
@@ -68,8 +53,8 @@ function  Header (props) {
       <div className="lang">
         <div className="inner">
           <ul className="lang-list">
-            <li><a>KOR</a></li>
-            <li><a>ENG</a></li>
+            <li><Link href="/"><a>KOR</a></Link></li>
+            <li><Link href="/eng"><a>ENG</a></Link></li>
           </ul>
         </div>
       </div>
@@ -80,15 +65,21 @@ function  Header (props) {
           </div>
 
           <div className="nav-logo">
-            <Link href="/"><a><img src="/imgs/logo.png" alt=""></img></a></Link>
+            {
+              props.lang == "eng" ?
+              <Link href="/eng"><a><img src="/imgs/logo.png" alt=""></img></a></Link>
+              :
+              <Link href="/"><a><img src="/imgs/logo.png" alt=""></img></a></Link>
+
+            } 
           </div>
           <div className="nav-list"
             onMouseOver={onHandleMouseOver} onMouseOut={onHandleMouseOut}>
             <ul>
-              {arrNav.map((item, index) => {
+              {props.arrNav.map((item, index) => {
                 let result = <li key={index}>{item}</li> 
                   if (index > 2) {
-                    result = <li key={index}><a href={arrSubNavURL[index][0]}>{item}</a></li> 
+                    result = <li key={index}><a href={props.arrSubNavURL[index][0]}>{item}</a></li> 
                   }
                 return result
               })}
@@ -97,29 +88,37 @@ function  Header (props) {
               <div className="inner nav-down-wrap-inner">
                 <div>
                   <ul>
-                    {arrSubNav[0].map((item, index) => 
-                      <li key={index}>
-                        <Link href={arrSubNavURL[0][index]} ><a>{item}</a></Link>
-                      </li>
+                    {props.arrSubNav[0].map((item, index) => {
+                      if (item == "") return null
+                      return (
+                        <li key={index}>
+                          <Link href={props.arrSubNavURL[0][index]} ><a>{item}</a></Link>
+                        </li>) }
                     )}
                   </ul>
                 </div>
 
                 <div>
                   <ul>
-                    {arrSubNav[1].map((item, index) => 
-                      <li key={index}>
-                        <Link href={arrSubNavURL[1][index]} ><a>{item}</a></Link>
-                      </li>
+                    {props.arrSubNav[1].map((item, index) => {
+                      if (item == "") return null
+                      return (
+                        <li key={index}>
+                          <Link href={props.arrSubNavURL[1][index]} ><a>{item}</a></Link>
+                        </li>
+                      ) }
                     )}
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    {arrSubNav[2].map((item, index) => 
-                      <li key={index}>
-                        <Link href={arrSubNavURL[2][index]} ><a>{item}</a></Link>
-                      </li>
+                    {props.arrSubNav[2].map((item, index) => {
+                      if (item == "") return null
+                      return (
+                        <li key={index}>
+                          <Link href={props.arrSubNavURL[2][index]} ><a>{item}</a></Link>
+                        </li>
+                      ) }
                     )}
                   </ul>
                 </div>
