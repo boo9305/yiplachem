@@ -1,7 +1,7 @@
 import SubLayout from '../../components/SubLayout' 
 import sty from '../../styles/develop.module.css'
 
-export default (props) => {
+function certification(props) {
   const picName = [
     "certification1.jpg", "certification2.jpg", "certification3.jpg", 
     "certification4.jpg","certification5.jpg","certification6.jpg"]
@@ -17,7 +17,7 @@ export default (props) => {
             {picName.map((item, index) => {
               let picUrl = "/imgs/" + item;
 
-              return <li>
+              return <li key={index}>
                 <div>
                   <img src={picUrl}></img>
                   <div className={sty.certiPicTxt}>
@@ -33,3 +33,4 @@ export default (props) => {
   )
 }
 
+export default certification

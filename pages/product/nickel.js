@@ -2,14 +2,14 @@
 import SubLayout from '../../components/SubLayout' 
 import sty from '../../styles/products.module.css'
 
-export default (props) => {
+function nickel(props) {
   return (
     <SubLayout location="Intro > CEO" navIndex="1" subNavIndex="3">
       <div className="sub-inner">
         <div className={sty.productMain}>
           <div className={sty.productInner}>
             <h4 class="h4_tit">무전해 니켈-붕소 도금액 <span>(Electroless Ni-B Plating Bath)</span></h4>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">제품명</th>
@@ -38,7 +38,7 @@ export default (props) => {
           </div>
           <div className={sty.productInner}>
             <h4 class="h4_tit">무전해 니켈-인 도금액 <span>(Electroless Ni-P Plating Bath)</span></h4>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col" rowspan="2">제품명</th>
@@ -87,3 +87,4 @@ export default (props) => {
   </SubLayout>
   )
 }
+export default nickel

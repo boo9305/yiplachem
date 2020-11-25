@@ -32,7 +32,7 @@ export default (props) => {
             <div>
               <img src="/svgs/phone-call.svg" alt=""></img>
               <div>
-                <h1>영업팀 권광순 과장</h1>
+                <h1>영업팀 권순광 과장</h1>
                 <p>TEL. 031-491-9406</p>
                 <p>Email. sunright99@hanmail.net</p>
               </div>
@@ -42,7 +42,7 @@ export default (props) => {
             <div>
               <img src="/svgs/phone-call.svg" alt=""></img>
               <div>
-                <h1>개발팀 양재영과장</h1>
+                <h1>개발팀 양재영 과장</h1>
                 <p>TEL. 031-491-9406</p>
                 <p>Email. yangyang1004@hanmail.net</p>
               </div>

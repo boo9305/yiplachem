@@ -1,14 +1,14 @@
 import SubLayout from '../../components/SubLayout' 
 import sty from '../../styles/products.module.css'
 
-export default (props) => {
+function znic(props) {
   return (
     <SubLayout location="Intro > CEO" navIndex="1" subNavIndex="5">
       <div className="sub-inner">
         <div className={sty.productMain}>
           <div className={sty.productInner}>
             <h4 class="h4_tit">아연-니켈 합금도금액 <span>(Zn-Ni Alloy Plating Bath)</span></h4>
-            <table className={sty.table} cellspacing="0"> 
+            <table className={sty.table} > 
               <thead>
                 <tr>
                   <th scope="col" className={sty.th1}>Product</th>
@@ -33,7 +33,7 @@ export default (props) => {
           </div>
           <div className={sty.productInner}>
             <h4 class="h4_tit">3가 크로메이트 아연도금용 <span>(Trivalent Chromate for Zinc Plating)</span></h4>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th  colspan="2" className={sty.znicFirst}>Product</th>
@@ -81,7 +81,7 @@ export default (props) => {
           </div>
           <div className={sty.productInner}>
             <h4 class="h4_tit">3가 크로메이트 아연-니켈도금용 <span>(Trivalent Chromate for Zinc Nickel Alloy Plating)</span></h4>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col" colspan="2" className={sty.znicFirst}>Product</th>
@@ -160,3 +160,4 @@ export default (props) => {
   </SubLayout>
   )
 }
+export default znic

@@ -1,7 +1,7 @@
 import SubLayout from '../../components/SubLayout' 
 import sty from '../../styles/products.module.css'
 
-export default (props) => {
+function alloy(props) {
   return (
     <SubLayout location="Intro > CEO" navIndex="1" subNavIndex="2">
       <div className="sub-inner">
@@ -9,7 +9,7 @@ export default (props) => {
           <div className={sty.productInner}>
             <h4 class="h4_tit">삼원합금도금</h4>
             <h5 class="h5_tit mt30">삼원합금도금<span>(Tri-Alloy Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0"> 
+            <table className={sty.table} > 
               <thead>
                 <tr>
                   <th scope="col" rowspan="2">Product</th>
@@ -62,7 +62,7 @@ export default (props) => {
           <div className={sty.productInner}>
             <h4 class="h4_tit">이원합금도금</h4>
             <h5 class="h5_tit mt30">주석-니켈 합금도금액 <span>(Tin-Nickel Alloy Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0"> 
+            <table className={sty.table} > 
               <thead>
                 <tr>
                   <th scope="col">Product</th>
@@ -102,7 +102,7 @@ export default (props) => {
               </tbody>
             </table>
             <h5 class="h5_tit mt30">주석-코발트 합금도금액 <span>(Tin-Cobalt Alloy Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">Product</th>
@@ -137,3 +137,5 @@ export default (props) => {
     </SubLayout>
   )
 }
+
+export default alloy

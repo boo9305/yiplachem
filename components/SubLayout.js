@@ -60,7 +60,7 @@ const SubLayout =  (props) => {
       <div className="sub-nav-title-txt">
         <div className="inner">
           <h2>{arrSubNav[props.navIndex][props.subNavIndex]}</h2>
-          <h3>고객의 행복을 함께 만들어가는 영인플라켐입니다.</h3>
+          <h3>고객의 행복을 함께 만들어가는 (주)영인플라켐입니다.</h3>
         </div>
       </div>
 

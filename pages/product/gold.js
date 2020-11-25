@@ -1,7 +1,7 @@
 import SubLayout from '../../components/SubLayout' 
 import sty from '../../styles/products.module.css'
 
-export default (props) => {
+function gold (props) {
   return (
     <SubLayout location="Intro > CEO" navIndex="1" subNavIndex="1">
       <div className="sub-inner">
@@ -9,7 +9,7 @@ export default (props) => {
           <div className={sty.productInner}>
             <h4 class="h4_tit">전기금도금</h4>
             <h5 class="h5_tit mt30">산성 금스트라이크 도금액 <span>(Gold Strike Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">제품명</th>
@@ -38,7 +38,7 @@ export default (props) => {
               </tbody>
             </table>
             <h5 class="h5_tit mt30">약 산성 금도금액 <span>(Hard Gold Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">제품명</th>
@@ -102,7 +102,7 @@ export default (props) => {
               </tbody>
             </table>
             <h5 class="h5_tit mt30">고속 금도금액 <span>(High Speed Gold Plating Bath)</span> - Reel To Reel</h5>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">제품명</th>
@@ -144,7 +144,7 @@ export default (props) => {
               </tbody>
             </table>
             <h5 class="h5_tit mt30">산성 금-주석 합금도금액 <span>(Gold-Tin Alloy Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">제품명</th>
@@ -175,7 +175,7 @@ export default (props) => {
               </tbody>
             </table>
             <h5 class="h5_tit mt30">순금도금액 <span>(Pure Gold Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">제품명</th>
@@ -207,7 +207,7 @@ export default (props) => {
           <div class={sty.productInner}>
             <h4 class="h4_tit">무전해금도금</h4>
             <h5 class="h5_tit mt30">치환형 무전해 금도금 <span>(Immersion Electroless Gold Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0" >
+            <table className={sty.table}  >
               <thead>
                 <tr>
                   <th scope="col">제품명</th>
@@ -234,7 +234,7 @@ export default (props) => {
               </tbody>
             </table>
             <h5 class="h5_tit mt30">치환형 무전해 두께 금도금 <span>(Immersion Electroless Thicker Gold Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">제품명</th>
@@ -261,7 +261,7 @@ export default (props) => {
               </tbody>
             </table>
             <h5 class="h5_tit mt30">환원형 무전해 금도금 <span>(Electroless Gold Plating Bath)</span></h5>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">제품명</th>
@@ -294,3 +294,4 @@ export default (props) => {
   )
 }
 
+export default gold

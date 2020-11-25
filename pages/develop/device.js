@@ -1,7 +1,7 @@
 import SubLayout from '../../components/SubLayout' 
 import sty from '../../styles/develop.module.css'
 
-export default (props) => {
+function device (props) {
 
   const picName = [
     "equipment1.jpg", "equipment2.jpg", "equipment3.jpg", 
@@ -30,7 +30,7 @@ export default (props) => {
             {picName.map((item, index) => {
               let picUrl = "/imgs/" + item;
 
-              return <li>
+              return <li key={index}>
                 <div>
                   <img src={picUrl}></img>
                   <div className={sty.devicePicTxt}>
@@ -47,3 +47,4 @@ export default (props) => {
   )
 }
 
+export default device;

@@ -1,14 +1,14 @@
 import SubLayout from '../../components/SubLayout' 
 import sty from '../../styles/products.module.css'
 
-export default (props) => {
+function eco (props) {
   return (
     <SubLayout location="Intro > CEO" navIndex="1" subNavIndex="4">
       <div className="sub-inner">
         <div className={sty.productMain}>
           <div className={sty.productInner}>
             <h4 class="h4_tit">3가 크롬 도금액 <span>(Trivalent Chromium Plating Bath)</span></h4>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col" rowspan="2">Product</th>
@@ -53,7 +53,7 @@ export default (props) => {
           </div>
           <div className={sty.productInner}>
             <h4 class="h4_tit">알루미늄 활성화제 및 징케이트제 <span>(Aluminium Desmut &amp; Zincate)</span></h4>
-            <table className={sty.table} cellspacing="0">
+            <table className={sty.table} >
               <thead>
                 <tr>
                   <th scope="col">Product</th>
@@ -110,3 +110,5 @@ export default (props) => {
   </SubLayout>
   )
 }
+
+export default eco

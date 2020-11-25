@@ -7,7 +7,7 @@ const Layout = (props) => {
   return (
     <div>
       <Head>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5cc042af4f09efa6615f95459ec74df5"></script>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d981319aab651ca712d07652f155f1d2"></script>
       </Head>
       <Header navIndex={props.navIndex}/>
       {props.children}

@@ -2,7 +2,7 @@ import SubLayout from '../../components/SubLayout'
 
 import sty from '../../styles/products.module.css'
 
-export default (props) => {
+function products(props) {
   return (
     <SubLayout location="Intro > CEO" navIndex="1" subNavIndex="0">
       <div className="sub-inner">
@@ -152,3 +152,4 @@ export default (props) => {
   )
 }
 
+export default products
