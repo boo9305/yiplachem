@@ -1,4 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 
 const Home = (props) => {
@@ -29,7 +30,7 @@ const Home = (props) => {
                   <p>Youngin Plachem has products such as "Gold Plating", "Alloy Plating", "Electroless Nickel Plating" "Environment-Friendly Products", "Zn and Zn Alloy Plating"</p>
                   <img src="/imgs/section0-item1.png" alt=""></img>
                   <div>
-                    <a href="/product/products">More</a>
+                    <Link href="/product/productsEng"><a>More</a></Link>
                   </div>
                 </div>
               </li>
@@ -39,7 +40,7 @@ const Home = (props) => {
                   <p>Youngin Plachem's Research Status, Equipment, Certificate</p>
                   <img src="/imgs/section0-item2.png" alt=""></img>
                   <div>
-                    <a href="/develop/lab">More</a>
+                    <Link href="/develop/statusEng"><a>More</a></Link>
                   </div>
                 </div>
               </li>
@@ -49,7 +50,7 @@ const Home = (props) => {
                   <p>Youngin Plachem try every day for satisfaction of customer's more requirement with continuous R&D and innovation</p>
                   <img src="/imgs/section0-item3.png" alt=""></img>
                   <div>
-                    <a href="/support">More</a>
+                    <Link href="/supportEng"><a>More</a></Link>
                   </div>
                 </div>
               </li>
