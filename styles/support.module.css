@@ -49,20 +49,21 @@
   height : 150px;
 }
 
-.contactList > li > div > div {
-  float :left;
-}
-
 .contactList > li > div > img {
+  float :left;
   margin-top : 50px;
   margin-right : 20px;
+  width : 10%;
+}
+
+.contactList > li > div > div {
   float :left;
-  width : 50px;
+  width : 80%;
 }
 
 .contactList > li > div > div >h1{
   margin-top : 30px;
-  font-size : 18px;
+  font-size : 16px;
   font-weight : 400;
   color : #333;
 }
@@ -80,5 +81,15 @@
   }
   .contactList > li {
     width : 100%;
+  }
+
+  .contactList > li > div {
+    height : 120px;
+  }
+  .contactList > li > div > div >h1{
+    font-size : 16px;
+  }
+  .contactList > li > div > div > p{
+    font-size : 12px;
   }
 }

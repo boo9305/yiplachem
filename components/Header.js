@@ -9,7 +9,7 @@ function  Header (props) {
   let navRightMenu = null
 
   const onHandleMouseOver = () => {
-    navDownWrapRef.style.height = '400px' 
+    navDownWrapRef.style.height = '450px' 
     navDownWrapRef.style.visibility = 'visible' 
     blindRef.style.backgroundColor = 'rgba(0,0,0,0.5)'
     blindRef.style.height = '100%'
