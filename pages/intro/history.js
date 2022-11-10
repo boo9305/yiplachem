@@ -7,7 +7,20 @@ export default (props) => {
       <div className="inner">
         <div className={sty.histMain}>
           <div className={sty.histCenterLine}></div>
-
+          <div className={sty.histLeft}>
+            <div className={sty.histLeftImg}></div>
+            <div className={sty.histLeftTxt}>
+              <h2>2022</h2>
+              <p>통신용 마그네슘도금 프로세스(무전해니켈,동도금,은도금)개발</p>
+            </div>
+          </div>
+          <div className={sty.histRight}>
+            <div className={sty.histRightImg}></div>
+            <div className={sty.histRightTxt}>
+              <h2>2020</h2>
+              <p>PCB용 무전해 니켈박리제 개발,ENF-511(고속도금용 중인 무전해니켈)개발</p>
+            </div>
+          </div>
           <div className={sty.histLeft}>
             <div className={sty.histLeftImg}></div>
             <div className={sty.histLeftTxt}>

@@ -74,7 +74,7 @@ table {
 .nav-list > ul > li {
   top : 0;
   left : 0;
-  width : 145px;
+  width : 120px;
   float : left;
   text-align : center;
   line-height:60px;
@@ -167,7 +167,7 @@ table {
 }
 .nav-down-wrap-inner > div{
   float : left;
-  width : 145px;
+  width : 120px;
 }
 
 .nav-down-wrap-inner > div > ul > li {

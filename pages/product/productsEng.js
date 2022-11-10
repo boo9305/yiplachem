@@ -4,7 +4,7 @@ import sty from '../../styles/products.module.css'
 
 function products(props) {
   return (
-    <SubLayout location="Intro > CEO" navIndex="1" subNavIndex="0" lang="eng">
+    <SubLayout location="Intro > CEO" navIndex="2" subNavIndex="0" lang="eng">
       <div className="sub-inner">
         <div className={sty.productMain}>
           <div className={sty.productInner}>

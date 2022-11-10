@@ -7,19 +7,19 @@ function device (props) {
     "equipment1.jpg", "equipment2.jpg", "equipment3.jpg", 
     "equipment4.jpg","equipment5.jpg","equipment6.jpg",
     "equipment7.jpg","equipment8.jpg","equipment9.jpg",
-    "equipment10.jpg","equipment11.jpg",]
+    "equipment10.jpg","equipment11.jpg","equipment12.jpg"]
 
   const picTitle = [
     "SEM/EDS", "GC-MS" ,"HPLC",
     "ICP-OES", "AAS" ,"X-RAY THICKNESS TESTER",
     "CE", "IC" ,"Video camera",
-    "Hardness testing machine", "X-ray(XRF)"
+    "Hardness testing machine", "X-ray(XRF)", "FT-IR"
   ]
   const picSubTitle = [
   ]
 
   return (
-    <SubLayout location="Intro > CEO" navIndex="2" subNavIndex="2" lang="eng">
+    <SubLayout location="Intro > CEO" navIndex="3" subNavIndex="2" lang="eng">
       <div className="sub-inner">
         <div className={sty.deviceMain}>
           <ul>

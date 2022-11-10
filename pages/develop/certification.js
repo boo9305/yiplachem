@@ -10,7 +10,7 @@ function certification(props) {
     "ISO 9001" , "ISO14001" , "벤처기업 확인서" , "특허증" , "기업부설 인증서" , " 뿌리기술전문기업 인증서"
   ]
   return (
-    <SubLayout location="Intro > CEO" navIndex="2" subNavIndex="3">
+    <SubLayout location="Intro > CEO" navIndex="3" subNavIndex="3">
       <div className="sub-inner">
         <div className={sty.certiMain}>
           <ul>

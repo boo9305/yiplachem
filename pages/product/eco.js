@@ -3,7 +3,7 @@ import sty from '../../styles/products.module.css'
 
 function eco (props) {
   return (
-    <SubLayout location="Intro > CEO" navIndex="1" subNavIndex="4">
+    <SubLayout location="Intro > CEO" navIndex="2" subNavIndex="4">
       <div className="sub-inner">
         <div className={sty.productMain}>
           <div className={sty.productInner}>

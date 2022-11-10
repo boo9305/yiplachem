@@ -7,13 +7,13 @@ function device (props) {
     "equipment1.jpg", "equipment2.jpg", "equipment3.jpg", 
     "equipment4.jpg","equipment5.jpg","equipment6.jpg",
     "equipment7.jpg","equipment8.jpg","equipment9.jpg",
-    "equipment10.jpg","equipment11.jpg",]
+    "equipment10.jpg","equipment11.jpg","equipment12.jpg"]
 
   const picTitle = [
     "SEM/EDS", "GC-MS" ,"HPLC",
     "ICP-OES", "AAS" ,"X-RAY THICKNESS TESTER",
     "CE(전기영동장치)", "IC" ,"비디오카메라",
-    "경도기", "X-ray 측정기"
+    "경도기", "X-ray 측정기", "FT-IR"
   ]
   const picSubTitle = [
     "(금속표면조직분석 및 표면 성분분석)", "(휘발성유기물 정성/정량분석)", "(유기물 정량분석)",
@@ -23,7 +23,7 @@ function device (props) {
   ]
 
   return (
-    <SubLayout location="Intro > CEO" navIndex="2" subNavIndex="2">
+    <SubLayout location="Intro > CEO" navIndex="3" subNavIndex="2">
       <div className="sub-inner">
         <div className={sty.deviceMain}>
           <ul>

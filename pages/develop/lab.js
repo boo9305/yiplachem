@@ -3,7 +3,7 @@ import sty from '../../styles/develop.module.css'
 
 function lab(props)  {
   return (
-    <SubLayout location="Intro > CEO" navIndex="2" subNavIndex="0">
+    <SubLayout location="Intro > CEO" navIndex="3" subNavIndex="0">
       <div className="sub-inner">
         <div className={sty.labMain}>
          <h1>표면처리공학연구소 소개</h1>

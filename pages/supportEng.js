@@ -5,7 +5,7 @@ import sty from '../styles/support.module.css'
 
 export default (props) => {
   return (
-    <SubLayout location="Intro > CEO" navIndex="4" subNavIndex="0" lang="eng">
+    <SubLayout location="Intro > CEO" navIndex="5" subNavIndex="0" lang="eng">
       <div className="sub-inner">
         <ul className={sty.supportList}>
           <li>

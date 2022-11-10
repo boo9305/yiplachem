@@ -1,0 +1,142 @@
+.labMain {
+  margin : 0 20px 0px 20px;
+}
+.labMain > h1 {
+  font-size :25px;
+  font-weight : 500;
+  color : #555;
+}
+
+.labMain > h2 {
+  font-size :23px;
+  font-weight : 300;
+  color : #555;
+}
+
+.labMain > p {
+  font-size :15px;
+  font-weight : 300;
+  color : #777;
+}
+
+.blueTxt {
+  color : #043285;
+  font-weight : 500;
+}
+
+.statusMain {
+  margin-right : 100px;
+  margin-left : 50px;
+  text-align : center;
+}
+
+.statusMain > img{
+  max-width : 100%;
+}
+
+.deviceMain {
+  overflow: hidden;
+}
+
+.deviceMain > ul > li{
+  float : left;
+  width : 33%;
+}
+
+.deviceMain > ul > li > div{
+  position : relative;
+  margin : 10px;
+}
+
+.deviceTxt > p {
+  padding: 5px 0;
+  font-size : 13px;
+}
+
+.deviceMain > ul > li > div > img{
+  max-width : 100%;
+  border : 1px solid black;
+}
+
+.devicePicTxt {
+  position: absolute;
+  bottom: 0;
+  left : 0;
+  width : 100%;
+  height : 60px;
+  background-color : rgba(0,0,0,0.5)
+}
+.devicePicTxt > h1{
+  margin : 10px 0 0 10px;
+  color : #fff;
+  font-size : 15px;
+  font-weight : 300;
+}
+
+.devicePicTxt > h2{
+  margin : 0px 10px 0 10px;
+  color : #eee;
+  font-size : 13px;
+  font-weight : 300;
+}
+
+
+.certiMain {
+  overflow: hidden;
+}
+
+.certiMain > ul > li{
+  float : left;
+  width : 33%;
+}
+
+.certiMain > ul > li > div{
+  position : relative;
+  margin : 10px;
+  text-align: center;
+}
+
+
+.certiMain > ul > li > div > img{
+  max-width : 100%;
+  border : 1px solid black;
+}
+
+.certiPicTxt {
+  position: absolute;
+  bottom: 0;
+  left : 0;
+  width : 100%;
+  height : 60px;
+  background-color : rgba(0,0,0,0.5)
+}
+.certiPicTxt > h1{
+  line-height: 60px;
+  color : #fff;
+  font-size : 15px;
+  font-weight : 300;
+}
+
+@media (max-width : 1080px) {
+  .labMain > h1 {
+    font-size :17px;
+  }
+  
+  .labMain > h2 {
+    font-size :15px;
+
+  }
+  
+  .labMain > p {
+    font-size :12px;
+  }
+  
+  .devicePicTxt > h1{
+    margin : 0;
+    text-align: center;
+    line-height: 60px;
+  }
+  .devicePicTxt > h2{
+  display : none;
+  }
+}

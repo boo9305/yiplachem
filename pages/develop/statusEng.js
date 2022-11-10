@@ -3,7 +3,7 @@ import sty from '../../styles/develop.module.css'
 
 function status(props) {
   return (
-    <SubLayout location="Intro > CEO" navIndex="2" subNavIndex="1" lang="eng">
+    <SubLayout location="Intro > CEO" navIndex="3" subNavIndex="1" lang="eng">
       <div className="sub-inner">
         <div className={sty.statusMain}>
           <img src="/imgs/statusEng.jpg" alt="" />

@@ -3,7 +3,7 @@ import sty from '../../styles/products.module.css'
 
 function nickel(props) {
   return (
-    <SubLayout location="Intro > CEO" navIndex="1" subNavIndex="3" lang="eng">
+    <SubLayout location="Intro > CEO" navIndex="2" subNavIndex="3" lang="eng">
       <div className="sub-inner">
         <div className={sty.productMain}>
           <div className={sty.productInner}>

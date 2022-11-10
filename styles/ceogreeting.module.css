@@ -1,5 +1,51 @@
-.ceoMain {
-  padding-top : 100px;
+
+.vietnamTitle {
+  padding: 10px;
+}
+
+.vietnamMain {
+  padding : 10px;
+  height: 300px;
+}
+.vietnamTxt {
+  float:left;
+  width: 20%;
+}
+
+.vietnamTxtInner > p {
+  height:50px;
+  padding-bottom: 10px;
+}
+
+.vietnamSubTxt {
+  float:left;
+  width: 75%;
+  
+}
+
+.vietnamSubTxt >p {
+  height:50px;
+  padding-bottom: 10px;
+}
+
+.clear {
+  clear:both;
+}
+
+.vietnamImg {
+  align-content: center;
+  text-align: center;
+}
+
+.vietnamImg > img {
+  width: 900px;
+}
+
+
+.ceoMaintxt {
+  padding-top : 10px;
+  height : 100%;
+  ;
 }
 
 .ceoImg {
@@ -33,7 +79,7 @@
 .ceoMaintxt > p {
   margin-top : 0 50px;
   padding : 30px;
-  color : #777; 
+  color : #555; 
   font-size : 15px;
   font-weight : 400;
 }
@@ -42,9 +88,40 @@
   color : #043285
 }
 
+.emBlueBig {
+  color : #043285;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.emBar {
+  padding-left: 10px;
+  margin-right : 40px;
+  border-left: 5px solid #043285;
+  
+}
+
 @media (max-width : 1080px) {
+
+  .vietnamTxtInner > p {
+    height:35px;
+    padding-bottom: 5px;
+    font-size: 5px;
+  }
+  
+  
+  .vietnamSubTxt >p {
+    height:35px;
+    padding-bottom: 5px;
+    font-size: 5px;
+  }
+  
   .ceoImg > h1 {
     font-size : 15px;
+  }
+
+  .vietnamImg > img {
+    width: 400px;
   }
 
   .ceoMaintxt > p {

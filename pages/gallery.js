@@ -4,7 +4,7 @@ import SubLayout from '../components/SubLayout'
 
 export default (props) => {
   return (
-    <SubLayout location="Intro > CEO" navIndex="3" subNavIndex="0">
+    <SubLayout location="Intro > CEO" navIndex="4" subNavIndex="0">
     </SubLayout>
   )
 }
