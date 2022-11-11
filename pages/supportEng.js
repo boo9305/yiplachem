@@ -34,7 +34,7 @@ export default (props) => {
               <div>
                 <h1>Sales Dept . Soonkwang Kwon</h1>
                 <p>TEL. 031-491-9406</p>
-                <p>Email. sunright99@hanmail.net</p>
+                <p>Email. chemiktm@naver.com</p>
               </div>
             </div>
           </li>

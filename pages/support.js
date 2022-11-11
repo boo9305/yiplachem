@@ -35,7 +35,7 @@ export default (props) => {
                 <h1>영업팀 김태민 팀장</h1>
                 <p>TEL. 031-491-9406</p>
                 <p>TEL. 010-9260-7761</p>
-                <p>Email. sunright99@hanmail.net</p>
+                <p>Email. chemiktm@naver.com</p>
               </div>
             </div>
           </li>

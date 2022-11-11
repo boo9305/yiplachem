@@ -103,17 +103,27 @@
 
 @media (max-width : 1080px) {
 
+
+  .vietnamTxt {
+    width: 30%;
+  }
+
+  .vietnamSubTxt {
+    width: 65%;    
+  }
+  
+
   .vietnamTxtInner > p {
-    height:35px;
+    height:50px;
     padding-bottom: 5px;
-    font-size: 5px;
+    font-size: 13px;
   }
   
   
   .vietnamSubTxt >p {
-    height:35px;
+    height:50px;
     padding-bottom: 5px;
-    font-size: 5px;
+    font-size: 13px;
   }
   
   .ceoImg > h1 {
