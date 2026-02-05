@@ -25,13 +25,175 @@
 }
 
 .statusMain {
-  margin-right : 100px;
-  margin-left : 50px;
+  margin: 0 auto;
+  padding: 0 50px;
   text-align : center;
+  max-width: 100%;
 }
 
 .statusMain > img{
   max-width : 100%;
+}
+
+/* Research Status Styles */
+.researchContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 60px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.researchItem {
+  display: grid;
+  grid-template-columns: 120px minmax(300px, 1.5fr) minmax(350px, 1.8fr);
+  align-items: center;
+  gap: 50px;
+}
+
+.hexagonWrapper {
+  flex-shrink: 0;
+  width: 120px;
+  height: 138px;
+}
+
+.hexagonWrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Title Area Styles */
+.researchTitleArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.researchTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.colorRed {
+  color: #c94854;
+}
+
+.colorTeal {
+  color: #2b8b9a;
+}
+
+.colorGray {
+  color: #5a6670;
+}
+
+.colorOrange {
+  color: #e67e22;
+}
+
+.researchSubtitle {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+  font-weight: 300;
+}
+
+.researchLine {
+  height: 2px;
+  background-color: #e0e0e0;
+  position: relative;
+  width: 100%;
+}
+
+.researchLine::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.lineRed {
+  background-color: #c94854;
+}
+
+.lineRed::after {
+  background-color: #c94854;
+}
+
+.lineTeal {
+  background-color: #2b8b9a;
+}
+
+.lineTeal::after {
+  background-color: #2b8b9a;
+}
+
+.lineGray {
+  background-color: #5a6670;
+}
+
+.lineGray::after {
+  background-color: #5a6670;
+}
+
+.lineOrange {
+  background-color: #e67e22;
+}
+
+.lineOrange::after {
+  background-color: #e67e22;
+}
+
+/* List Styles */
+.researchList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.researchList li {
+  font-size: 16px;
+  color: #333;
+  padding: 5px 0;
+  padding-left: 22px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.researchList li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  line-height: 1;
+}
+
+.listRed li::before {
+  color: #c94854;
+}
+
+.listTeal li::before {
+  color: #2b8b9a;
+}
+
+.listGray li::before {
+  color: #5a6670;
+}
+
+.listOrange li::before {
+  color: #e67e22;
 }
 
 .deviceMain {
@@ -117,16 +279,16 @@
   .labMain > h1 {
     font-size :17px;
   }
-  
+
   .labMain > h2 {
     font-size :15px;
 
   }
-  
+
   .labMain > p {
     font-size :12px;
   }
-  
+
   .devicePicTxt > h1{
     margin : 0;
     text-align: center;
@@ -134,5 +296,56 @@
   }
   .devicePicTxt > h2{
   display : none;
+  }
+
+  /* Research Status Responsive */
+  .statusMain {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .researchContainer {
+    gap: 50px;
+    padding: 30px 10px;
+  }
+
+  .researchItem {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hexagonWrapper {
+    width: 100px;
+    height: 115px;
+    margin: 0 auto;
+  }
+
+  .researchTitleArea {
+    align-items: center;
+  }
+
+  .researchTitle {
+    font-size: 20px;
+  }
+
+  .researchSubtitle {
+    font-size: 13px;
+  }
+
+  .researchLine {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .researchList {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .researchList li {
+    font-size: 14px;
   }
 }
